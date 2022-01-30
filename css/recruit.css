@@ -602,20 +602,25 @@ a {
 /* ------------  Pharmacist  ------------ */
 
 .recuit_pharmacist {
-    max-width: 1020px;
-    width: 72.86%;
+    width: 100%;
     margin: 95% auto 0;
+    background: linear-gradient(to top, #f3efe6 0%, #f3efe6 90%, #fff 90%, #fff 100%);
+    padding-bottom: 30px;
 }
 
 @media (min-width:750px) {
     .recuit_pharmacist {
-        margin: 35% auto 0;
+        width: 100%;
+        margin: 45% auto 0;
+        background: linear-gradient(to top, #f3efe6 0%, #f3efe6 65%, #fff 65%, #fff 100%);
+        padding-bottom: 40px;
     }
 }
 
 @media (min-width:900px) {
     .recuit_pharmacist {
-        margin: 20% auto 0;
+        margin: 20% auto;
+        padding-bottom: 50px;
     }
 }
 
@@ -651,18 +656,33 @@ a {
 }
 
 .recuit_pharmacist_main {
-    width: 100%;
-    display: flex;
-    flex-direction: row-reverse;
-    margin-bottom: 30px;
+    width: 92%;
+    display: block;
+    margin: 0 auto 30px;
+}
+
+@media (min-width:750px) {
+    .recuit_pharmacist_main {
+        max-width: 1020px;
+        width: 72.85%;
+        display: flex;
+        flex-direction: row-reverse;
+        margin-bottom: 30px;
+    }
 }
 
 .recuit_pharmacist_main_img {
-    max-width: 509px;
-    width: 49.9%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+}
+
+@media (min-width:750px) {
+    .recuit_pharmacist_main_img {
+        max-width: 509px;
+        width: 49.9%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .recuit_pharmacist_main_img img {
@@ -670,44 +690,396 @@ a {
 }
 
 .recuit_pharmacist_main_text {
-    width: 48%;
+    width: 100%;
     margin-right: auto;
 }
 
+@media (min-width:750px) {
+    .recuit_pharmacist_main_text {
+        width: 48%;
+        margin-right: auto;
+    }
+}
+
 .recuit_pharmacist_main_text h2 {
-    font-size: 1.43vw;
+    font-size: 4vw;
     font-family: "Yu Gothic";
     color: rgb(215, 11, 42);
     font-weight: bold;
-    line-height: 1.8;
-    margin-bottom: 7%;
+    line-height: 1.5;
+    margin: 5% 0 7% 0;
+}
+
+@media (min-width:750px) {
+    .recuit_pharmacist_main_text h2 {
+        font-size: 1.43vw;
+        line-height: 1.8;
+        margin-bottom: 7%;
+    }
 }
 
 .recuit_pharmacist_main_text p {
-    font-size: 14px;
+    font-size: 3.75vw;
     font-family: "Yu Gothic";
     color: rgb(51, 51, 51);
-    font-weight: bold;
-    line-height: 2;
+    line-height: 1.7;
     text-align: left;
     letter-spacing: 1.2px;
 }
 
+@media (min-width:750px) {
+    .recuit_pharmacist_main_text p {
+        font-size: 14px;
+        text-align: left;
+        letter-spacing: 1.2px;
+        font-weight: bold;
+    }
+}
+
 .recuit_pharmacist_main_linkcont {
-    max-width: 290px;
-    width: 28.43%;
+    width: 66.66%;
+    margin: 0 auto;
+}
+
+@media (min-width:750px) {
+    .recuit_pharmacist_main_linkcont {
+        max-width: 1020px;
+        width: 72.85%;
+        margin: 0 auto;
+    }
 }
 
 .recuit_pharmacist_main_linkcont img {
     width: 100%;
 }
 
+@media (min-width:750px) {
+    .recuit_pharmacist_main_linkcont img {
+        width: 28.25%;
+    }
+}
 
+
+.recuit_pharmacist_main_interview {
+    display: block;
+    width: 92%;
+    margin: 0 auto;
+    position: relative;
+}
+
+@media (min-width:750px) {
+    .recuit_pharmacist_main_interview {
+        display: flex;
+        max-width: 1020px;
+        width: 72.85%;
+        justify-content: space-between;
+        padding-left: 10%;
+    }
+}
+
+.recuit_pharmacist_main_interview_title {
+    transform: rotate(90deg);
+    position: absolute;
+    left: -25%;
+    top: 10%;
+}
+
+@media (min-width:750px) {
+    .recuit_pharmacist_main_interview_title {
+        left: -12.5%;
+        top: 45%;
+    }
+}
+
+.recuit_pharmacist_main_interview_title_main {
+    font-size: 18.7vw;
+    font-family: "agenda";
+    color: rgba(255, 255, 255, 0.702);
+    line-height: 0.72;
+}
+
+@media (min-width:750px) {
+    .recuit_pharmacist_main_interview_title_main {
+        font-size: 7.15vw;
+        line-height: 0.72;
+    }
+}
+
+
+.recuit_pharmacist_main_interview_title_sub {
+    font-size: 4.01vw;
+    font-family: "Yu Gothic";
+    color: rgba(215, 11, 42, 0.8);
+    font-weight: bold;
+    line-height: 3.36;
+    position: absolute;
+    top: 29%;
+}
+
+@media (min-width:750px) {
+    .recuit_pharmacist_main_interview_title_sub {
+        font-size: 1.5vw;
+        top: 30%;
+    }
+}
+
+.recuit_pharmacist_main_interview_maincont_01, .recuit_pharmacist_main_interview_maincont_02, .recuit_pharmacist_main_interview_maincont_03 {
+    width: 56.6%;
+    margin: 15% auto;
+    position: relative;
+}
+
+@media (min-width:750px) {
+    .recuit_pharmacist_main_interview_maincont_01, .recuit_pharmacist_main_interview_maincont_02, .recuit_pharmacist_main_interview_maincont_03 {
+        width: 31.8%;
+        margin: 10% 0 0 0%;
+        position: relative;
+    }
+}
+
+.recuit_pharmacist_main_interview_maincont_01 img, .recuit_pharmacist_main_interview_maincont_02 img, .recuit_pharmacist_main_interview_maincont_03 img {
+    width: 100%;
+}
+
+.recuit_pharmacist_main_interview_maincont_01 p, .recuit_pharmacist_main_interview_maincont_02 p, .recuit_pharmacist_main_interview_maincont_03 P {
+    color: #fff;
+    font-size: 14px;
+    font-family: "Yu Gothic";
+    line-height: 25px;
+
+}
+
+@media (min-width:480px) {
+    .recuit_pharmacist_main_interview_maincont_01 p, .recuit_pharmacist_main_interview_maincont_02 p, .recuit_pharmacist_main_interview_maincont_03 P {
+        font-size: 18px;
+        line-height: 30px;
+        font-weight: bold;
+    }
+}
+
+@media (min-width:600px) {
+    .recuit_pharmacist_main_interview_maincont_01 p, .recuit_pharmacist_main_interview_maincont_02 p, .recuit_pharmacist_main_interview_maincont_03 P {
+        font-size: 21px;
+        line-height: 33.6px;
+    }
+}
+
+@media (min-width:750px) {
+    .recuit_pharmacist_main_interview_maincont_01 p, .recuit_pharmacist_main_interview_maincont_02 p, .recuit_pharmacist_main_interview_maincont_03 P {
+        font-size: 13px;
+        line-height: 23px;
+    }
+}
+
+@media (min-width:1000px) {
+    .recuit_pharmacist_main_interview_maincont_01, .recuit_pharmacist_main_interview_maincont_02, .recuit_pharmacist_main_interview_maincont_03 P {
+        color: #fff;
+        font-size: 14px;
+        font-family: "Yu Gothic";
+        line-height: 24px;
+        font-weight: bold;
+    }
+}
+
+.occupation {
+    width: 120px;
+    height: 25px;
+    background-color: #333333;
+    margin: 0 0 10px 0;
+    padding-left: 3%;
+    position: absolute;
+    top: 60%;
+}
+
+@media (min-width:480px) {
+    .occupation {
+        width: 130px;
+        height: 30px;
+    }
+}
+
+@media (min-width:600px) {
+    .occupation {
+        width: 168px;
+        height: 33.6px;
+        top: 65%;
+        left: 7%;
+    }
+}
+
+@media (min-width:750px) {
+    .occupation {
+        width: 110px;
+        height: 23px;
+        top: 55%;
+    }
+}
+
+@media (min-width:1000px) {
+    .occupation {
+        width: 120px;
+        height: 24px;
+        top: 65%;
+    }
+}
+
+.name {
+    width: 190px;
+    height: 25px;
+    background-color: #333333;
+    padding-left: 3%;
+    position: absolute;
+    top: 70%;
+}
+
+@media (min-width:480px) {
+    .name {
+        width: 240px;
+        height: 30px;
+    }
+}
+
+@media (min-width:600px) {
+    .name {
+        width: 280px;
+        height: 33.6px;
+        top: 75%;
+        left: 7%;
+    }
+}
+
+@media (min-width:750px) {
+    .name {
+        width: 180px;
+        height: 23px;
+        top: 65%;
+        left: 7%;
+    }
+}
+
+@media (min-width:1000px) {
+    .name {
+        width: 200px;
+        height: 24px;
+        top: 75%;
+    }
+}
+
+.recuit_pharmacist_main_interview_maincont_catchcopy {
+    width: 100%;
+    margin: 5% 0 0 0;
+}
+
+.recuit_pharmacist_main_interview_maincont_catchcopy p {
+    font-size: 3.7vw;
+    font-family: "Yu Gothic";
+    color: rgb(51, 51, 51);
+    line-height: 1.35;
+}
+
+@media (min-width:750px) {
+    .recuit_pharmacist_main_interview_maincont_catchcopy p {
+        font-size: 18px;
+        font-family: "Yu Gothic";
+        line-height: 1.7;
+        font-weight: bold;
+    }
+}
 
 /* ------------  Regular  ------------ */
 
+#recuit_regular {
+    margin-top: 12%;
+    margin-bottom: 10%;
+}
+
+@media (min-width:750px) {
+    #recuit_regular {
+        margin-top: 12%;
+        margin-bottom: 5%;
+    }
+}
+
 
 /* ------------  Welfare  ------------ */
+
+.recruit_welfare {
+    width: 100%;
+    margin: 12% auto 0;
+}
+
+@media (min-width:750px) {
+    .recruit_welfare {
+        width: 100%;
+        margin: 12% auto 0;
+    }
+}
+
+.recruit_welfare h1 {
+    font-size: 6.4vw;
+    font-family: "Yu Gothic";
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    line-height: 0.75;
+    text-align: center;
+    margin: 0 auto 25px;
+}
+
+@media (min-width:750px) {
+    .recruit_welfare h1 {
+        font-size: 30px;
+    }
+}
+
+.recruit_welfare hr {
+    background-color: rgb(215, 11, 42);
+    width: 9.5%;
+    height: 4px;
+    margin: 0 auto 65px;
+    border: none;
+}
+
+@media (min-width:750px) {
+    .recruit_welfare hr {
+        width: 50px;
+        height: 4px;
+    }
+}
+
+.recruit_welfare_main {
+    width: 92%;
+    display: block;
+    margin: 0 auto 30px;
+}
+
+@media (min-width:750px) {
+    .recruit_welfare_main {
+        max-width: 1020px;
+        width: 72.85%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+}
+
+.recruit_welfare_main_block {
+    width: 32.35%;
+}
+
+.recruit_welfare_main_block img {
+    width: 100%;
+    margin-bottom: 9%;
+}
+
+.recruit_welfare_main_block p {
+    font-size: 14px;
+    font-family: "Yu Gothic";
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    line-height: 2.143;
+    text-align: left;
+    letter-spacing: 0.8px;
+}
 
 
 /* ------------  Education  ------------ */
