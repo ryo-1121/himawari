@@ -13,6 +13,10 @@
 
   <title>top</title>
 
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <!-- font -->
   <script>
     (function (d) {
       var config = {
@@ -57,6 +61,18 @@
           <p class="header_menu_list_item2">FAQ</p>
         </a>
       </li>
+      <li class="header_menu_list header_sp">
+        <a href="">
+          <p class="header_menu_list_item1">新卒採用</p>
+          <p class="header_menu_list_item2">RECRUIT</p>
+        </a>
+      </li>
+      <li class="header_menu_list header_sp">
+        <a href="">
+          <p class="header_menu_list_item1">求人検索</p>
+          <p class="header_menu_list_item2">SEARCH</p>
+        </a>
+      </li>
     </ul>
     <div class="header_right_item">
       <a href="">
@@ -71,6 +87,11 @@
           <p>求人検索</p>
         </div>
       </a>
+    </div>
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
   </header>
 
@@ -233,6 +254,29 @@
       Copyright &copy; Pupule Himawari
     </div>
   </footer>
+
+  <script>
+    $(function () {
+      $('.hamburger').click(function () {
+        $(this).toggleClass('active');
+
+        if ($(this).hasClass('active')) {
+          $('.header_menu').addClass('active');
+        } else {
+          $('.header_menu').removeClass('active');
+        }
+      });
+      let $pagetop = $('.up_arrow');
+      $(window).on('scroll', function () {
+        //スクロール位置を取得
+        if ($(this).scrollTop() < 40) {
+          $pagetop.removeClass('isActive');
+        } else {
+          $pagetop.addClass('isActive');
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>
