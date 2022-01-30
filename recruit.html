@@ -57,6 +57,18 @@
           <p class="header_menu_list_item2">FAQ</p>
         </a>
       </li>
+      <li class="header_menu_list header_sp">
+        <a href="">
+          <p class="header_menu_list_item1">新卒採用</p>
+          <p class="header_menu_list_item2">RECRUIT</p>
+        </a>
+      </li>
+      <li class="header_menu_list header_sp">
+        <a href="">
+          <p class="header_menu_list_item1">求人検索</p>
+          <p class="header_menu_list_item2">SEARCH</p>
+        </a>
+      </li>
     </ul>
     <div class="header_right_item">
       <a href="">
@@ -71,6 +83,11 @@
           <p>求人検索</p>
         </div>
       </a>
+    </div>
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
   </header>
 
@@ -324,6 +341,7 @@
   </div>
 
 
+  <!-- footer -->
   <footer>
     <img class="footer_up_arrow" src="image/common/up_arrow.png" alt="">
     <section class="footer_section">
@@ -336,26 +354,32 @@
           </li>
           <li class="footer_sns">
             <div>
-              <p>公式SNSはこちらｖ</p>
+              <img src="image/common/sns_message.png" alt="">
+              <!-- <p>公式SNSはこちらｖ</p> -->
             </div>
             <div class="footer_sns_item">
               <a href="">
-                <img src="image/common/Instagram_icon.png" alt="">
+                <img class="footer_pc" src="image/common/Instagram_icon.png" alt="">
+                <img class="footer_sp" src="image/common/Instagram_icon_sp.png" alt="">
               </a>
               <a href="">
-                <img src="image/common/Twitter_icon.png" alt="">
+                <img class="footer_pc" src="image/common/Twitter_icon.png" alt="">
+                <img class="footer_sp" src="image/common/Twitter_icon_sp.png" alt="">
               </a>
               <a href="">
-                <img src="image/common/YT_icon.png" alt="">
+                <img class="footer_pc" src="image/common/YT_icon.png" alt="">
+                <img class="footer_sp" src="image/common/YT_icon_sp.png" alt="">
               </a>
               <a href="">
-                <img src="image/common/LINE_icon.png" alt="">
+                <img class="footer_pc" src="image/common/LINE_icon.png" alt="">
+                <img class="footer_sp footer_sns_item_last" src="image/common/LINE_icon_sp.png" alt="">
               </a>
             </div>
           </li>
           <li>
             <a href="">
-              <img src="image/common/logo_welcia.png" alt="">
+              <img class="footer_pc" src="image/common/logo_welcia.png" alt="">
+              <img class="footer_sp" src="image/common/logo_welcia_sp.png" alt="">
             </a>
           </li>
         </ul>
@@ -454,6 +478,28 @@
     </div>
   </footer>
 
+  <script>
+    $(function () {
+      $('.hamburger').click(function () {
+        $(this).toggleClass('active');
+
+        if ($(this).hasClass('active')) {
+          $('.header_menu').addClass('active');
+        } else {
+          $('.header_menu').removeClass('active');
+        }
+      });
+      let $pagetop = $('.up_arrow');
+      $(window).on('scroll', function () {
+        //スクロール位置を取得
+        if ($(this).scrollTop() < 40) {
+          $pagetop.removeClass('isActive');
+        } else {
+          $pagetop.addClass('isActive');
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>
