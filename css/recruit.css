@@ -372,8 +372,8 @@ a {
 
 @media (min-width:750px) {
     .recruit_personality_maincont {
-        max-width: 1000px;
-        width: 71.43%;
+        max-width: 1020px;
+        width: 72.86%;
         margin: auto;
         position: relative;
     }
@@ -602,8 +602,8 @@ a {
 /* ------------  Pharmacist  ------------ */
 
 .recuit_pharmacist {
-    max-width: 1000px;
-    width: 71.43%;
+    max-width: 1020px;
+    width: 72.86%;
     margin: 95% auto 0;
 }
 
@@ -649,6 +649,59 @@ a {
         height: 4px;
     }
 }
+
+.recuit_pharmacist_main {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 30px;
+}
+
+.recuit_pharmacist_main_img {
+    max-width: 509px;
+    width: 49.9%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recuit_pharmacist_main_img img {
+    width: 100%;
+}
+
+.recuit_pharmacist_main_text {
+    width: 48%;
+    margin-right: auto;
+}
+
+.recuit_pharmacist_main_text h2 {
+    font-size: 1.43vw;
+    font-family: "Yu Gothic";
+    color: rgb(215, 11, 42);
+    font-weight: bold;
+    line-height: 1.8;
+    margin-bottom: 7%;
+}
+
+.recuit_pharmacist_main_text p {
+    font-size: 14px;
+    font-family: "Yu Gothic";
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    line-height: 2;
+    text-align: left;
+    letter-spacing: 1.2px;
+}
+
+.recuit_pharmacist_main_linkcont {
+    max-width: 290px;
+    width: 28.43%;
+}
+
+.recuit_pharmacist_main_linkcont img {
+    width: 100%;
+}
+
 
 
 /* ------------  Regular  ------------ */
