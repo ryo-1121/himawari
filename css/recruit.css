@@ -16,6 +16,10 @@ a {
 }
 
 /* ------------  Challenge  ------------ */
+.recruit_challenge {
+    max-width: 1400px;
+    margin: auto;
+}
 
 .recruit_challenge_top {
     position: relative;
@@ -619,7 +623,7 @@ a {
 
 @media (min-width:900px) {
     .recuit_pharmacist {
-        margin: 20% auto 85px;
+        margin: 185px auto 85px;
         padding-bottom: 85px;
     }
 }
@@ -712,7 +716,7 @@ a {
 
 @media (min-width:750px) {
     .recuit_pharmacist_main_text h2 {
-        font-size: 1.43vw;
+        font-size: 1.4vw;
         line-height: 1.8;
         margin-bottom: 7%;
     }
@@ -787,7 +791,7 @@ a {
 @media (min-width:750px) {
     .recuit_pharmacist_main_interview_title {
         left: -12.5%;
-        top: 45%;
+        top: 36%;
     }
 }
 
@@ -832,7 +836,7 @@ a {
 @media (min-width:750px) {
     .recuit_pharmacist_main_interview_maincont_01, .recuit_pharmacist_main_interview_maincont_02, .recuit_pharmacist_main_interview_maincont_03 {
         width: 31.8%;
-        margin: 10% 0 0 0%;
+        margin: 65px 0 0 0;
         position: relative;
     }
 }
@@ -995,7 +999,7 @@ a {
 
 @media (min-width:750px) {
     #recuit_regular {
-        margin-top: 12%;
+        margin-top: 65px;
         margin-bottom: 5%;
     }
 }
@@ -1084,7 +1088,7 @@ a {
 
 /* ------------  Education  ------------ */
 .recruit_education {
-    margin-bottom: 80px;
+    margin-bottom: 70px;
 }
 
 .recruit_education h1 {
@@ -1117,7 +1121,13 @@ a {
     color: rgb(51, 51, 51);
     font-weight: bold;
     text-align: center;
-    margin-bottom: 60px;
+    margin: 0 auto 60px;
+    max-width: 80%;
+}
+
+.recruit_education_item {
+    max-width: 80%;
+    margin: auto;
 }
 
 .recruit_education_items {
@@ -1153,18 +1163,19 @@ a {
 .recruit_education_item_detail h3 {
     font-size: 30px;
     font-family: "Agenda";
+    font-weight: normal;
     color: rgb(243, 238, 230);
     line-height: 1;
     margin-left: auto;
 }
 
 .recruit_education_item_detail p {
-        font-size: 14px;
-        font-family: "YuGothic";
-        color: rgb(51, 51, 51);
-        font-weight: bold;
-        line-height: 2;
-        text-align: left;
+    font-size: 14px;
+    font-family: "YuGothic";
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    line-height: 2;
+    text-align: left;
 }
 
 .recruit_education_item_hr {
@@ -1179,9 +1190,20 @@ a {
 
 
 /* ------------  Entry  ------------ */
+
+
 .recruit_entry {
-    background-image: url(../image/recruit/entry_bg.png);
+    background-image: url(../image/recruit/entry_bg_sp.png);
     background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@media (min-width: 900px) {
+    .recruit_entry {
+        background-image: url(../image/recruit/entry_bg.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
 }
 
 .recuit_entry_message {
@@ -1193,16 +1215,43 @@ a {
     text-align: center;
 }
 
+.recuit_entry_message img {
+    vertical-align: top;
+}
+
 .recruit_entry_items {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: flex-end;
-    max-width: 1020px;
-    margin: 0 auto 122px;
+    text-align: center;
+    max-width: 80%;
+    margin: auto;
+}
+
+@media (min-width: 1100px) {
+    .recruit_entry_items {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        max-width: 1020px;
+        margin: 0 auto 100px;
+    }
+}
+
+.recruit_entry_items a {
+    margin: 0 auto;
 }
 
 .recruit_entry_items img {
-    max-width: 494px;
+    max-width: 80%;
+    margin-bottom: 45px;
+}
+
+@media (min-width: 1100px) {
+    .recruit_entry_items img {
+        max-width: 494px;
+        margin-bottom: 20px;
+    }
+}
+
+.recruit_entry_items .recruit_entry_items_first {
     margin-bottom: 20px;
 }
