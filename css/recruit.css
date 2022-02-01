@@ -94,6 +94,50 @@ a {
     width: 100%;
 }
 
+.recruit_challenge_top_imgcont02_sp .recruit_challenge_message {
+    width: 20%;
+    vertical-align: sub;
+}
+
+@media (min-width:750px) {
+    .recruit_challenge_top_imgcont02 .recruit_challenge_message {
+        width: 25%;
+        vertical-align: sub;
+    }
+}
+
+@media (min-width:750px) {
+    .recruit_challenge_top_imgcont02 span {
+        width: 97%;
+        position: absolute;
+        top: 3%;
+        left: 3%;
+        font-size: 4.5vw;
+        font-size:max(4.5vw);
+        font-family: 'Shippori Mincho', serif;
+        color: rgb(51, 51, 51);
+        line-height: 1.308;
+        text-align: left;
+        vertical-align: sub;
+        letter-spacing: 1.8px;
+    }
+}
+
+.recruit_challenge_top_imgcont02_sp span {
+    width: 100%;
+    position: absolute;
+    top: 101%;
+    left: 4%;
+    font-size: 8.5vw;
+    font-size:max(8.5vw);
+    font-family: 'Shippori Mincho', serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.308;
+    text-align: left;
+    vertical-align: sub;
+    letter-spacing: 5px;
+}
+
 .recruit_challenge_top_imgcont03 {
     display: none;
 }
@@ -104,7 +148,7 @@ a {
         width: 36%;
         float: right;
         position: absolute;
-        top: 46.9%;
+        top: 46%;
         right: 0;
     }
 }
@@ -112,6 +156,7 @@ a {
 .recruit_challenge_top_imgcont03 img {
     width: 100%;
 }
+
 
 .recruit_challenge_top_imgcont03_sp {
     display: block;
@@ -377,7 +422,25 @@ a {
 @media (min-width:750px) {
     .recruit_personality_maincont {
         max-width: 1020px;
-        width: 72.86%;
+        width: 700px;
+        margin: auto;
+        position: relative;
+    }
+}
+
+@media (min-width:910px) {
+    .recruit_personality_maincont {
+        max-width: 1020px;
+        width: 850px;
+        margin: auto;
+        position: relative;
+    }
+}
+
+@media (min-width:1100px) {
+    .recruit_personality_maincont {
+        max-width: 1020px;
+        width: 1020px;
         margin: auto;
         position: relative;
     }
@@ -668,12 +731,25 @@ a {
 @media (min-width:750px) {
     .recuit_pharmacist_main {
         max-width: 1020px;
-        width: 72.85%;
+        width: 700px;
         display: flex;
         flex-direction: row-reverse;
         margin-bottom: 30px;
     }
 }
+
+@media (min-width:910px) {
+    .recuit_pharmacist_main {
+        width: 850px;
+    }
+}
+
+@media (min-width:1100px) {
+    .recuit_pharmacist_main {
+        width: 1020px;
+    }
+}
+
 
 .recuit_pharmacist_main_img {
     width: 100%;
@@ -775,16 +851,28 @@ a {
     .recuit_pharmacist_main_interview {
         display: flex;
         max-width: 1020px;
-        width: 72.85%;
+        width: 680px;
         justify-content: space-between;
         padding-left: 10%;
+    }
+}
+
+@media (min-width:910px) {
+    .recuit_pharmacist_main_interview {
+        width: 820px;
+    }
+}
+
+@media (min-width:1150px) {
+    .recuit_pharmacist_main_interview {
+        width: 1020px;
     }
 }
 
 .recuit_pharmacist_main_interview_title {
     transform: rotate(90deg);
     position: absolute;
-    left: -25%;
+    left: -20%;
     top: 10%;
 }
 
@@ -877,11 +965,8 @@ a {
 
 @media (min-width:1000px) {
     .recuit_pharmacist_main_interview_maincont_01, .recuit_pharmacist_main_interview_maincont_02, .recuit_pharmacist_main_interview_maincont_03 P {
-        color: #fff;
         font-size: 14px;
-        font-family: "Yu Gothic";
         line-height: 24px;
-        font-weight: bold;
     }
 }
 
@@ -913,13 +998,22 @@ a {
 
 @media (min-width:750px) {
     .occupation {
-        width: 110px;
+        width: 100px;
         height: 23px;
+        top: 50%;
+        left: 3%;
+    }
+}
+
+@media (min-width:1100px) {
+    .occupation {
+        width: 120px;
+        height: 24px;
         top: 55%;
     }
 }
 
-@media (min-width:1000px) {
+@media (min-width:1300px) {
     .occupation {
         width: 120px;
         height: 24px;
@@ -954,17 +1048,23 @@ a {
 
 @media (min-width:750px) {
     .name {
-        width: 180px;
+        width: 160px;
         height: 23px;
-        top: 65%;
-        left: 7%;
+        top: 60%;
+        left: 3%;
     }
 }
 
-@media (min-width:1000px) {
+@media (min-width:1100px) {
     .name {
         width: 200px;
         height: 24px;
+        top: 65%;
+    }
+}
+
+@media (min-width:1300px) {
+    .name {
         top: 75%;
     }
 }
@@ -982,6 +1082,14 @@ a {
 }
 
 @media (min-width:750px) {
+    .recuit_pharmacist_main_interview_maincont_catchcopy p {
+        font-size: 16px;
+        font-family: "Yu Gothic";
+        line-height: 1.5;
+    }
+}
+
+@media (min-width:910px) {
     .recuit_pharmacist_main_interview_maincont_catchcopy p {
         font-size: 18px;
         font-family: "Yu Gothic";
@@ -1059,15 +1167,34 @@ a {
 @media (min-width:750px) {
     .recruit_welfare_main {
         max-width: 1020px;
-        width: 72.85%;
+        width: 700px;
         display: flex;
         justify-content: space-between;
-        margin-bottom: 30px;
+        margin: 0 auto 30px;
+    }
+}
+
+@media (min-width:910px) {
+    .recruit_welfare_main {
+        width: 850px;
+    }
+}
+
+@media (min-width:1100px) {
+    .recruit_welfare_main {
+        width: 1020px;
     }
 }
 
 .recruit_welfare_main_block {
-    width: 32.35%;
+    width: 92%;
+    margin: 0 auto;
+}
+
+@media (min-width:750px) {
+    .recruit_welfare_main_block {
+        width: 32.35%;
+    }
 }
 
 .recruit_welfare_main_block img {
@@ -1076,13 +1203,19 @@ a {
 }
 
 .recruit_welfare_main_block p {
-    font-size: 14px;
+    font-size: 3.74vw;
     font-family: "Yu Gothic";
     color: rgb(51, 51, 51);
-    font-weight: bold;
-    line-height: 2.143;
+    line-height: 1.7;
     text-align: left;
     letter-spacing: 0.8px;
+}
+
+@media (min-width:750px) {
+    .recruit_welfare_main_block p {
+        font-size: 13px;
+        font-weight: bold;
+    }
 }
 
 
