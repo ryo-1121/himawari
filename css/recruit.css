@@ -817,7 +817,7 @@ a {
 
 .recuit_pharmacist_main_linkcont {
     width: 66.66%;
-    margin: 0 auto;
+    margin: 60px auto 0;
 }
 
 @media (min-width:750px) {
@@ -1242,8 +1242,10 @@ a {
 
 @media (min-width:750px) {
     .recruit_welfare_main_block p {
-        font-size: 13px;
+        font-size: 14px;
         font-weight: bold;
+        line-height: 1.4;
+        letter-spacing: 0.8px;
     }
 }
 
