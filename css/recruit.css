@@ -102,23 +102,23 @@ a {
 @media (min-width:750px) {
     .recruit_challenge_top_imgcont02 .recruit_challenge_message {
         width: 25%;
-        vertical-align: sub;
+        vertical-align: bottom;
     }
 }
 
 @media (min-width:750px) {
     .recruit_challenge_top_imgcont02 span {
         width: 97%;
+        max-width: 650px;
         position: absolute;
         top: 3%;
         left: 3%;
-        font-size: 4.5vw;
-        font-size:max(4.5vw);
+        font-size:clamp(30px, 4.5vw, 63px);
         font-family: 'Shippori Mincho', serif;
         color: rgb(51, 51, 51);
         line-height: 1.308;
         text-align: left;
-        vertical-align: sub;
+        vertical-align: bottom;
         letter-spacing: 1.8px;
     }
 }
@@ -129,12 +129,12 @@ a {
     top: 101%;
     left: 4%;
     font-size: 8.5vw;
-    font-size:max(8.5vw);
+    font-size:clamp(30px, 4.5vw, 63px);
     font-family: 'Shippori Mincho', serif;
     color: rgb(51, 51, 51);
     line-height: 1.308;
     text-align: left;
-    vertical-align: sub;
+    vertical-align: bottom;
     letter-spacing: 5px;
 }
 
