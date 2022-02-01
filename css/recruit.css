@@ -95,7 +95,7 @@ a {
 }
 
 .recruit_challenge_top_imgcont02_sp .recruit_challenge_message {
-    width: 20%;
+    width: 25%;
     vertical-align: sub;
 }
 
@@ -113,7 +113,7 @@ a {
         position: absolute;
         top: 3%;
         left: 3%;
-        font-size:clamp(30px, 4.5vw, 63px);
+        font-size: clamp(30px, 4.5vw, 63px);
         font-family: 'Shippori Mincho', serif;
         color: rgb(51, 51, 51);
         line-height: 1.308;
@@ -124,12 +124,12 @@ a {
 }
 
 .recruit_challenge_top_imgcont02_sp span {
-    width: 100%;
+    /* width: 100%; */
     position: absolute;
     top: 101%;
     left: 4%;
     font-size: 8.5vw;
-    font-size:clamp(30px, 4.5vw, 63px);
+    font-size: clamp(30px, 4.5vw, 63px);
     font-family: 'Shippori Mincho', serif;
     color: rgb(51, 51, 51);
     line-height: 1.308;
@@ -1161,7 +1161,7 @@ a {
 .recruit_welfare_main {
     width: 92%;
     display: block;
-    margin: 0 auto 30px;
+    margin: 0 auto 250px;
 }
 
 @media (min-width:750px) {
@@ -1253,32 +1253,62 @@ a {
     font-family: "YuGothic";
     color: rgb(51, 51, 51);
     font-weight: bold;
-    text-align: center;
     margin: 0 auto 60px;
     max-width: 80%;
 }
 
+@media (min-width: 750px) {
+    .recruit_education_sub {
+        text-align: center;
+    }
+}
+
 .recruit_education_item {
-    max-width: 80%;
-    margin: auto;
+    max-width: 85%;
+    margin: 0 auto 60px;
+}
+
+@media (min-width: 1100px) {
+    .recruit_education_item {
+        margin: 0;
+    }
 }
 
 .recruit_education_items {
     max-width: 1020px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     margin: auto;
+    text-align: center;
 }
 
+@media (min-width: 1100px) {
+    .recruit_education_items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+.recruit_education_item img {
+    width: 100%;
+    max-width: 484px;
+}
+
+
 .recruit_education_item_detail {
+    width: 90%;
     max-width: 433px;
     margin: auto;
     padding: 18px;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 3px 16px 0px rgba(80, 80, 80, 0.15);
     position: relative;
-    top: -33px;
+    top: -10px;
+}
+
+@media (min-width: 560px) {
+    .recruit_education_item_detail {
+        top: -33px;
+    }
 }
 
 .recruit_education_item_title {
@@ -1286,7 +1316,7 @@ a {
 }
 
 .recruit_education_item_detail h2 {
-    font-size: 18px;
+    font-size: 16px;
     font-family: "YuGothic";
     color: rgb(215, 11, 42);
     font-weight: bold;
@@ -1294,12 +1324,21 @@ a {
 }
 
 .recruit_education_item_detail h3 {
-    font-size: 30px;
+    font-size: 20px;
     font-family: "Agenda";
     font-weight: normal;
     color: rgb(243, 238, 230);
     line-height: 1;
     margin-left: auto;
+}
+
+@media (min-width: 560px) {
+    .recruit_education_item_detail h2 {
+        font-size: 18px;
+    }
+    .recruit_education_item_detail h3 {
+        font-size: 30px;
+    }
 }
 
 .recruit_education_item_detail p {
@@ -1314,7 +1353,7 @@ a {
 .recruit_education_item_hr {
     background-color: rgb(51, 51, 51);
     opacity: 0.302;
-    width: 396px;
+    width: 100%;
     margin: 15px 0;
 }
 
@@ -1341,20 +1380,42 @@ a {
 
 .recuit_entry_message {
     padding-top: 55px;
-    font-size: 36px;
+    font-size: 26px;
     font-family: "Shippori Mincho";
     color: rgb(51, 51, 51);
     line-height: 1.806;
     text-align: center;
 }
 
+@media (min-width: 600px) {
+    .recuit_entry_message {
+        font-size: 30px;
+    }
+}
+
+    @media (min-width: 1100px) {
+    .recuit_entry_message {
+        font-size: 36px;
+    }
+    .recuit_entry_message_br {
+        display: none;
+    }
+}
+
 .recuit_entry_message img {
     vertical-align: top;
+    width: 20%;
+}
+
+@media (min-width: 1100px) {
+    .recuit_entry_message img {
+        width: auto;
+    }
 }
 
 .recruit_entry_items {
     text-align: center;
-    max-width: 80%;
+    max-width: 90%;
     margin: auto;
 }
 
@@ -1374,13 +1435,13 @@ a {
 }
 
 .recruit_entry_items img {
-    max-width: 80%;
+    width: 100%;
+    max-width: 494px;
     margin-bottom: 45px;
 }
 
 @media (min-width: 1100px) {
     .recruit_entry_items img {
-        max-width: 494px;
         margin-bottom: 20px;
     }
 }
