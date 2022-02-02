@@ -1,20 +1,3 @@
-/* ------------  All  ------------ */
-
-ul {
-    padding: 0;
-    margin: 0;
-}
-
-li {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-    list-style: none;
-    cursor: pointer;
-}
-
 /* ------------  Challenge  ------------ */
 .recruit_challenge {
     max-width: 1400px;
@@ -1404,8 +1387,6 @@ a {
 @media (min-width: 900px) {
     .recruit_entry {
         background-image: url(../image/recruit/entry_bg.png);
-        background-repeat: no-repeat;
-        background-size: contain;
     }
 }
 
