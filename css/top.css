@@ -19,35 +19,59 @@
 
 /* ------------  entry  ------------ */
 .top_entry {
-    background-image: url(../image/recruit/entry_bg_sp.png);
+    background-image: url(../image/top/entry_bg_sp.png);
     background-repeat: no-repeat;
     background-size: contain;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1100px) {
     .top_entry {
-        background-image: url(../image/recruit/entry_bg.png);
+        background-image: url(../image/top/entry_bg.png);
         background-repeat: no-repeat;
         background-size: contain;
     }
 }
 
-.top_entry_items_recruit {
+.top_entry_items_top {
     text-align: center;
     padding: 110px 0 35px;
     position: relative
 }
 
 
-.top_entry_items_recruit img {
+.top_entry_items_top img {
     margin: auto;
+}
+
+.entry_challenge_img {
+    width: 90%;
+}
+
+.entry_pc {
+    display: none;
+}
+
+@media (min-width: 1100px) {
+    .entry_pc {
+        display: block;
+    }
+
+    .entry_sp {
+        display: none;
+    }
+}
+
+@media (min-width: 1100px) {
+    .entry_challenge_img {
+        width: auto;
+    }
 }
 
 .top_entry_message {
     position: absolute;
     right: 0;
     left: 0;
-    top: 40%;
+    top: 50%;
     font-size: 26px;
     font-family: "Shippori Mincho";
     color: rgb(255, 255, 255);
@@ -62,6 +86,7 @@
 
 @media (min-width: 1100px) {
     .top_entry_message {
+        top: 40%;
         font-size: 36px;
     }
 
@@ -72,7 +97,7 @@
 
 .top_entry_message img {
     vertical-align: top;
-    width: 20%;
+    /* width: 20%; */
 }
 
 @media (min-width: 1100px) {
@@ -107,6 +132,12 @@
 
 .top_entry_items a {
     margin: 0 auto;
+}
+
+@media (min-width: 1100px) {
+    .top_entry_items a {
+        margin: 0;
+    }
 }
 
 .top_entry_items img {
