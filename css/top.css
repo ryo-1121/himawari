@@ -1,5 +1,25 @@
 /* ------------  fv  ------------ */
 
+.top_fv_topimage {
+    background-image: url(../image/top/top_main01.png);
+    background-size: cover;
+    width: 100%;
+    display: flex;
+}
+
+.top_fv_topimage h1 {
+    font-size: 5vw;
+    font-family: "Kinuta MaruMaruGothic CLr StdN";
+    color: rgb(59, 47, 40);
+    line-height: 1.138;
+    text-align: left;
+    margin: 2.3% 0 0 2.7%;
+}
+
+.top_fv_topimage span {
+    color: #d70b2a;
+}
+
 
 
 /* ------------  news  ------------ */
