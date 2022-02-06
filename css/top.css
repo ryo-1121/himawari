@@ -559,6 +559,7 @@
         max-width: 450px;
         width: 100%;
         font-size: min(1vw, 16px);
+        font-size: clamp(14px, 1vw, 16px);
         font-family: "Yu Gothic";
         color: rgb(51, 51, 51);
         line-height: 1.4;
@@ -658,24 +659,27 @@
     max-width: 1020px;
     width: 72.857%;
     position: relative;
-    margin: 0 auto;
+    margin: 0 auto 85px;
 }
 
-.top_interview h1{
+.top_interview h1 {
     max-width: 830px;
     font-size: 120px;
-  font-family: agenda;
-  color: rgba(243, 239, 230, 0.6);
-  position: absolute;
-  z-index: -1;
-  left: 20%;
-  top: -15%;
+    font-family: agenda;
+    font-weight: inherit;
+    letter-spacing: 10px;
+    color: rgba(243, 239, 230, 0.6);
+    position: absolute;
+    z-index: -1;
+    left: 20%;
+    top: -15%;
 }
 
 .top_interview h2 {
     max-width: 305px;
     font-size: clamp(35px, 3.5vw, 48px);
     font-family: agenda;
+    font-weight: inherit;
     color: rgb(215, 11, 42);
     line-height: 1.5;
     transform: rotate(90deg);
@@ -740,6 +744,10 @@
     line-height: 1.667;
 }
 
+
+.top_interview_look {
+    text-align: center;
+}
 
 /* ------------  entry  ------------ */
 .top_entry {
