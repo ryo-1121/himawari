@@ -335,8 +335,15 @@
 /* ------------  about  ------------ */
 
 .top_about {
-    background: linear-gradient(to top, #f3efe6 0%, #f3efe6 71%, #fff 71%, #fff 100%);
+    background: linear-gradient(to top, #f3efe6 0%, #f3efe6 41%, #fff 41%, #fff 100%);
     padding-bottom: 10%;
+}
+
+@media (min-width: 750px) {
+    .top_about {
+        background: linear-gradient(to top, #f3efe6 0%, #f3efe6 71%, #fff 71%, #fff 100%);
+        padding-bottom: 10%;
+    }
 }
 
 .top_about h1 {
@@ -375,7 +382,7 @@
 
 .top_about_maincont {
     max-width: 750px;
-    width: 100%;
+    width: 92%;
     margin: 0 auto;
     position: relative;
 }
@@ -383,6 +390,7 @@
 @media (min-width: 750px) {
     .top_about_maincont {
         max-width: 750px;
+        width: 100%;
         display: flex;
         justify-content: space-between;
     }
@@ -395,8 +403,16 @@
 }
 
 .top_about_maincont_image {
-    width: 43.137%;
+    max-width: 499px;
+    width: 66.533%;
     order: 1;
+}
+
+@media (min-width: 750px) {
+    .top_about_maincont_image {
+        width: 43.137%;
+        order: 1;
+    }
 }
 
 .top_about_maincont_image img {
@@ -409,17 +425,17 @@
 
 .top_about_maincont_text h1 {
     font-size: 6.42vw;
-  font-family: "Kinuta MaruMaruGothic CLr StdN";
-  color: rgb(59, 47, 40);
-  line-height: 1.389;
-  text-align: left;
-  margin: 5% 0 10% 0;
+    font-family: "Kinuta MaruMaruGothic CLr StdN";
+    color: rgb(59, 47, 40);
+    line-height: 1.389;
+    text-align: left;
+    margin: 5% 0 10% 0;
 }
 
 @media (min-width: 750px) {
     .top_about_maincont_text h1 {
         font-size: 2.57vw;
-      margin: 5% 0 10% 0;
+        margin: 5% 0 10% 0;
     }
 }
 
@@ -428,19 +444,43 @@
 }
 
 .top_about_maincont_text p {
-    max-width: 445px;
+    max-width: 690px;
     width: 100%;
-    font-size: 1.15vw;
-  font-family: "Yu Gothic";
-  color: rgb(51, 51, 51);
-  line-height: 1.4;
+    font-size: 4.28vw;
+    font-family: "Yu Gothic";
+    color: rgb(51, 51, 51);
+    line-height: 1.4;
+    letter-spacing: 4px;
+    margin-bottom: 11%;
+}
+
+@media (min-width: 750px) {
+    .top_about_maincont_text p {
+        max-width: 445px;
+        width: 100%;
+        font-size: 1.15vw;
+        font-family: "Yu Gothic";
+        color: rgb(51, 51, 51);
+        line-height: 1.4;
+        letter-spacing: 0.3px;
+    }
 }
 
 .top_about_maincont_image_small {
     position: absolute;
-    max-width: 326px;
+    max-width: 325px;
+    width: 47.1%;
     z-index: 99;
-    margin: 40% 0 0 28%;
+    margin: -24% 0 0 53%;
+}
+
+@media (min-width: 750px) {
+    .top_about_maincont_image_small {
+        position: absolute;
+        max-width: 326px;
+        z-index: 99;
+        margin: 40% 0 0 28%;
+    }
 }
 
 .top_about_maincont_image_small img {
@@ -449,35 +489,96 @@
 
 .top_about h3 {
     position: absolute;
-    margin: -8% 0 0 60%;
-    font-size: 12.15vw;
+    transform: rotate(90deg);
+    margin: -68% 0 0 0;
+    font-size: 13.4vw;
     font-family: "agenda";
-  color: rgba(255, 255, 255, 0.502);
-  line-height: 0.424;
+    color: #f3efe6;
+    line-height: 0.424;
+    right: -14.5%;
+}
+
+@media (min-width: 750px) {
+    .top_about h3 {
+        transform: rotate(0deg);
+        margin: -8% 0 0 0;
+        font-size: 12.15vw;
+        color: rgba(255, 255, 255, 0.502);
+        line-height: 0.424;
+        right: -5%;
+    }
 }
 
 .top_about_sublink {
-    display: flex;
-    max-width: 1020px;
-    width: 100%;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: block;
+    max-width: 690px;
+    width: 92%;
     margin: 10% auto 0;
 }
 
+@media (min-width: 750px) {
+    .top_about_sublink {
+        display: flex;
+        max-width: 1020px;
+        width: 100%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 10% auto 0;
+    }
+}
+
 .top_about_sublink_image {
-    max-width: 500px;
-    width: 49.019%;
+    max-width: 690px;
+    width: 100%;
+}
+
+@media (min-width: 750px) {
+    .top_about_sublink_image {
+        max-width: 500px;
+        width: 49.019%;
+    }
 }
 
 .top_about_sublink_image img {
     width: 100%;
-    margin-bottom: 2%;
+    margin-bottom: 5%;
+}
+
+@media (min-width: 750px) {
+    .top_about_sublink_image img {
+        margin-bottom: 2%;
+    }
 }
 
 
 /* ------------  intervew  ------------ */
 
+.top_interview {
+    max-width: 1020px;
+    width: 100%;
+    position: relative;
+}
+
+.top_interview h2 {
+    max-width: 305px;
+    font-size: 48px;
+  font-family: agenda;
+  color: rgb(215, 11, 42);
+  line-height: 1.5;
+  transform: rotate(90deg);
+  position: absolute;
+}
+
+.top_interview h3 {
+    max-width: 117px;
+    font-size: 14px;
+  font-family: "Yu Gothic";
+  color: rgba(51, 51, 51, 0.8);
+  font-weight: bold;
+  line-height: 5.143;
+  transform: rotate(90deg);
+  position: absolute;
+}
 
 
 
