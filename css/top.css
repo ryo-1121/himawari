@@ -62,7 +62,7 @@
     background-size: cover;
     width: 100%;
     display: flex;
-    margin-bottom: 45px;
+    margin-bottom: 30px;
 }
 
 @media (min-width: 750px) {
@@ -72,7 +72,7 @@
 }
 
 .top_fv_topimage_sp h1 {
-    font-size: 8.5vw;
+    font-size: 7.5vw;
     font-family: "Kinuta MaruMaruGothic CLr StdN";
     color: rgb(59, 47, 40);
     line-height: 1.138;
@@ -89,13 +89,14 @@
 .top_fv_sns {
     max-width: 750px;
     width: 100%;
-    display: flex;
     margin: 0 auto 120px;
     justify-content: space-between;
+    display: none;
 }
 
 @media (min-width: 750px) {
     .top_fv_sns {
+        display: flex;
         max-width: 1020px;
         width: 72.857%;
     }
@@ -136,16 +137,40 @@
     width: 100%;
 }
 
+.top_fv_sns_sp_image.center {
+    margin: 0 45px;
+}
+
 /* search */
 .fv_search {
     position: absolute;
-    right: 50px;
-    /* bottom: 13px; */
-    top: 30%;
+    left: 4%;
+    top: 20%;
     background-color: rgb(215, 11, 42);
     box-shadow: 0px 6px 21px 0px rgba(60, 60, 60, 0.46);
     padding: 15px 10px;
 }
+
+@media (min-width: 750px) {
+    .fv_search {
+        left: auto;
+        right: 50px;
+        top: 12%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .fv_search {
+        top: 18%;
+    }
+}
+
+@media (min-width: 1230px) {
+    .fv_search {
+        top: 25%;
+    }
+}
+
 
 .fv_search_title {
     display: flex;
@@ -221,20 +246,19 @@
 .top_news {
     max-width: 750px;
     width: 100%;
-    margin: 20% auto 120px;
+    margin: 20% auto 85px;
 }
 
 @media (min-width: 750px) {
     .top_news {
         max-width: 750px;
-        margin: 0 auto 120px;
+        margin: 0 auto 85px;
     }
 }
 
 @media (min-width: 1050px) {
     .top_news {
         max-width: 1020px;
-        margin: 0 auto 120px;
     }
 }
 
@@ -428,6 +452,7 @@
     text-align: center;
     font-size: 8.02vw;
     font-family: agenda;
+    font-weight: inherit;
     color: rgb(215, 11, 42);
     line-height: 1.5;
     letter-spacing: 4px;
@@ -444,17 +469,14 @@
     font-family: "Yu Gothic";
     color: rgba(51, 51, 51, 0.8);
     font-weight: bold;
-    line-height: 5.143;
     text-align: center;
-    margin-top: -9%;
     margin-bottom: 50px;
 }
 
 @media (min-width: 750px) {
     .top_about h2 {
         font-size: 1vw;
-        margin-top: -3%;
-        margin-bottom: 45px;
+        margin-bottom: 60px;
     }
 }
 
@@ -512,8 +534,8 @@
 
 @media (min-width: 750px) {
     .top_about_maincont_text h1 {
-        font-size: 2.57vw;
-        margin: 5% 0 10% 0;
+        font-size: min(2.57vw, 36px);
+        margin: 20px 0 40px 0;
     }
 }
 
@@ -534,9 +556,9 @@
 
 @media (min-width: 750px) {
     .top_about_maincont_text p {
-        max-width: 445px;
+        max-width: 450px;
         width: 100%;
-        font-size: 1.15vw;
+        font-size: min(1vw, 16px);
         font-family: "Yu Gothic";
         color: rgb(51, 51, 51);
         line-height: 1.4;
@@ -571,9 +593,10 @@
     margin: -68% 0 0 0;
     font-size: 13.4vw;
     font-family: "agenda";
+    font-weight: inherit;
     color: #f3efe6;
     line-height: 0.424;
-    right: -14.5%;
+    right: 2%;
 }
 
 @media (min-width: 750px) {
@@ -583,7 +606,7 @@
         font-size: 12.15vw;
         color: rgba(255, 255, 255, 0.502);
         line-height: 0.424;
-        right: -5%;
+        right: 2%;
     }
 }
 
