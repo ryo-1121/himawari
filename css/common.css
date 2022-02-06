@@ -139,6 +139,7 @@ header {
 
 .header_recuit, .header_search {
     padding: 15px 38px 14px;
+    height: 100%;
 }
 
 .header_recuit img, .header_search img {

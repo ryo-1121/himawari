@@ -138,9 +138,83 @@
 
 /* search */
 .fv_search {
-    
+    position: absolute;
+    right: 50px;
+    /* bottom: 13px; */
+    top: 30%;
+    background-color: rgb(215, 11, 42);
+    box-shadow: 0px 6px 21px 0px rgba(60, 60, 60, 0.46);
+    padding: 15px 10px;
 }
 
+.fv_search_title {
+    display: flex;
+    font-size: 18px;
+    font-family: "YuGothic";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.49;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.fv_search_title p {
+    margin: 0 8px;
+}
+
+.fv_search_details {
+    border-radius: 2px;
+    background-color: rgb(255, 255, 255);
+    padding: 12px 9px 6px;
+}
+
+.fv_search_details select {
+    display: block;
+    border-width: 1px;
+    border-color: rgb(157, 157, 157);
+    border-style: solid;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 8px;
+    color: rgb(168, 168, 168);
+    font-size: 14px;
+    font-family: "YuGothic";
+    font-weight: bold;
+}
+
+.fv_search_details .fv_search_employment {
+    margin-bottom: 13px;
+}
+
+.fv_search_detail_submit {
+    background-color: rgb(51, 51, 51);
+    padding: 15px 0;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    font-family: "YuGothic";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.fa-search {
+    margin-right: 5px;
+}
+
+.fv_search_details_condition {
+    text-decoration: underline;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.fv_search_details_condition a {
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    font-size: 13px;
+    font-family: "YuGothic";
+
+}
 
 /* ------------  news  ------------ */
 
@@ -171,6 +245,7 @@
     color: rgb(215, 11, 42);
     line-height: 1.5;
     letter-spacing: 4px;
+    font-weight: inherit;
 }
 
 @media (min-width: 750px) {
@@ -184,16 +259,13 @@
     font-family: "Yu Gothic";
     color: rgba(51, 51, 51, 0.8);
     font-weight: bold;
-    line-height: 5.143;
     text-align: center;
-    margin-top: -9%;
-    margin-bottom: 45px;
+    margin-bottom: 40px;
 }
 
 @media (min-width: 750px) {
     .top_news h2 {
         font-size: 1vw;
-        margin-top: -3%;
         margin-bottom: 45px;
     }
 }
@@ -415,17 +487,17 @@
 
 .top_about_maincont_text h1 {
     font-size: 6.42vw;
-  font-family: "Kinuta MaruMaruGothic CLr StdN";
-  color: rgb(59, 47, 40);
-  line-height: 1.389;
-  text-align: left;
-  margin: 5% 0 10% 0;
+    font-family: "Kinuta MaruMaruGothic CLr StdN";
+    color: rgb(59, 47, 40);
+    line-height: 1.389;
+    text-align: left;
+    margin: 5% 0 10% 0;
 }
 
 @media (min-width: 750px) {
     .top_about_maincont_text h1 {
         font-size: 2.57vw;
-      margin: 5% 0 10% 0;
+        margin: 5% 0 10% 0;
     }
 }
 
@@ -437,9 +509,9 @@
     max-width: 445px;
     width: 100%;
     font-size: 1.15vw;
-  font-family: "Yu Gothic";
-  color: rgb(51, 51, 51);
-  line-height: 1.4;
+    font-family: "Yu Gothic";
+    color: rgb(51, 51, 51);
+    line-height: 1.4;
 }
 
 .top_about_maincont_image_small {
@@ -458,8 +530,8 @@
     margin: -8% 0 0 60%;
     font-size: 12.15vw;
     font-family: "agenda";
-  color: rgba(255, 255, 255, 0.502);
-  line-height: 0.424;
+    color: rgba(255, 255, 255, 0.502);
+    line-height: 0.424;
 }
 
 .top_about_sublink {
