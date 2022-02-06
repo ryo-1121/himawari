@@ -569,7 +569,7 @@
 .top_about_maincont_image_small {
     position: absolute;
     max-width: 325px;
-    width: 47.1%;
+    width: 31.961%;
     z-index: 99;
     margin: -24% 0 0 53%;
 }
@@ -652,6 +652,8 @@
 }
 
 
+
+
 /* ------------  intervew  ------------ */
 
 .top_interview {
@@ -702,9 +704,9 @@
 .top_interview_maincont {
     max-width: 885px;
     width: 86.764%;
-    margin-top: 10%;
     margin-left: auto;
     margin-bottom: 5%;
+    margin-top: 10%;
     display: flex;
     justify-content: space-between;
 }
@@ -712,18 +714,21 @@
 .top_interview_maincont_box01 {
     max-width: 279px;
     width: 31.525%;
+    position: relative;
 }
 
 .top_interview_maincont_box02 {
     max-width: 279px;
     width: 31.525%;
     margin-top: 5%;
+    position: relative;
 }
 
 .top_interview_maincont_box03 {
     max-width: 279px;
     width: 31.525%;
     margin-top: 10%;
+    position: relative;
 }
 
 .top_interview_maincont_box01 img, .top_interview_maincont_box02 img, .top_interview_maincont_box03 img {
@@ -738,6 +743,38 @@
     color: rgb(51, 51, 51);
     font-weight: bold;
     line-height: 1.667;
+}
+
+.top_interview_maincont_occupation {
+    width: 120px;
+    height: 25px;
+    background-color: #333333;
+    color: #fff;
+    font-family: "Yu Gothic";
+    font-size: 14px;
+    padding-left: 3%;
+    padding-top: 1%;
+    position: absolute;
+    z-index: 99;
+    top: 50%;
+    left: 5%;
+}
+
+
+.top_interview_maincont_name {
+    width: 190px;
+    height: 25px;
+    background-color: #333333;
+    color: #fff;
+    font-family: "Yu Gothic";
+    font-size: 14px;
+    padding-left: 3%;
+    padding-top: 1%;
+    margin: 0;
+    position: absolute;
+    z-index: 99;
+    top: 60%;
+    left: 5%;
 }
 
 
