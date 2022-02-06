@@ -656,19 +656,35 @@
 
 .top_interview {
     max-width: 1020px;
-    width: 100%;
+    width: 72.857%;
     position: relative;
+    margin: 0 auto;
+}
+
+.top_interview h1{
+    max-width: 830px;
+    font-size: 120px;
+  font-family: agenda;
+  color: rgba(243, 239, 230, 0.6);
+  position: absolute;
+  z-index: -1;
+  left: 20%;
+  top: -15%;
 }
 
 .top_interview h2 {
     max-width: 305px;
-    font-size: 48px;
+    font-size: clamp(35px, 3.5vw, 48px);
     font-family: agenda;
     color: rgb(215, 11, 42);
     line-height: 1.5;
     transform: rotate(90deg);
     position: absolute;
+    left: -9%;
+    top: 13%;
 }
+
+
 
 .top_interview h3 {
     max-width: 117px;
@@ -676,11 +692,53 @@
     font-family: "Yu Gothic";
     color: rgba(51, 51, 51, 0.8);
     font-weight: bold;
-    line-height: 5.143;
     transform: rotate(90deg);
     position: absolute;
+    left: -4%;
+    top: 0;
 }
 
+
+.top_interview_maincont {
+    max-width: 885px;
+    width: 86.764%;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top_interview_maincont_box01 {
+    max-width: 279px;
+    width: 31.525%;
+}
+
+.top_interview_maincont_box02 {
+    max-width: 279px;
+    width: 31.525%;
+    margin-top: 5%;
+}
+
+.top_interview_maincont_box03 {
+    max-width: 279px;
+    width: 31.525%;
+    margin-top: 10%;
+}
+
+.top_interview_maincont_box01 img, .top_interview_maincont_box02 img, .top_interview_maincont_box03 img {
+    width: 100%;
+    margin-bottom: 3%;
+}
+
+.top_interview_maincont_box01 p, .top_interview_maincont_box02 p, .top_interview_maincont_box03 p {
+    width: 100%;
+    font-size: clamp(14px, 1.4vw, 18px);
+    font-family: "Yu Gothic";
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    line-height: 1.667;
+}
 
 
 /* ------------  entry  ------------ */
