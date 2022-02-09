@@ -14,7 +14,8 @@
   <link rel="stylesheet" href="css/faq.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&display=swap"
+    rel="stylesheet">
   <link href="https://fonts.google.com/specimen/Barlow" rel="stylesheet">
 
   <title>faq</title>
@@ -104,9 +105,46 @@
     </div>
   </header>
 
-  
+  <!-- fv -->
+  <div class="faq_fv">
+    <h1 class="faq_fv_title">FAQ</h1>
+    <p class="faq_fv_sub">採用についてよくあるご質問</p>
+    <h2 class="faq_fv_bgtitle">FAQ</h2>
+    <p class="faq_fv_pan"><a href=""><i class="fa-solid fa-house-chimney"></i>ホーム</a> <i
+        class="fas fa-chevron-right faq_fv_fas"></i> 採用についてよくあるご質問</p>
+  </div>
 
+  <!-- question -->
+  <div class="faq_question">
+    <div class="faq_question_tab">
+      <p class="faq_question_tab_btn"><span class="faq_question_tab_btn_span active">応募に関する質問</span></p>
+      <p class="faq_question_tab_btn"><span class="faq_question_tab_btn_span">働き方に関する質問</span></p>
+    </div>
+    <div class="faq_question_panel">
+      <div class="faq_question_panel_area active">
+        <h2 class="faq_question_title">
+          応募に関する質問
+        </h2>
+        <hr>
+        <ul class="class="faq_question_list">
+          <li>
+            <div class="faq_question_list_item">
 
+            </div>
+
+          </li>
+        </ul>
+      </div>
+      <div class="faq_question_panel_area">
+        <h2 class="faq_question_title">
+          働き方に関する質問
+        </h2>
+        <hr>
+        <p>タブ22222</p>
+        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト22222</p>
+      </div>
+    </div>
+  </div>
 
 
   <!-- footer -->
@@ -245,6 +283,16 @@
       Copyright &copy; Pupule Himawari
     </div>
   </footer>
+
+  <script>
+    // タブ切り替え
+    $('.faq_question .faq_question_tab_btn_span').click(function () {
+      var index = $('.faq_question .faq_question_tab_btn_span').index(this);
+      $('.faq_question .faq_question_tab_btn_span, .faq_question .faq_question_panel_area').removeClass('active');
+      $(this).addClass('active');
+      $('.faq_question .faq_question_panel_area').eq(index).addClass('active');
+    });
+  </script>
 
   <script>
     $(function () {
