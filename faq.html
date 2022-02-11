@@ -25,6 +25,8 @@
 
   <!-- font -->
   <script src="https://kit.fontawesome.com/bcbec239cd.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 
   <!-- font -->
   <script>
@@ -105,20 +107,24 @@
     </div>
   </header>
 
+
   <!-- fv -->
-  <div class="faq_fv">
-    <h1 class="faq_fv_title">FAQ</h1>
-    <p class="faq_fv_sub">採用についてよくあるご質問</p>
-    <h2 class="faq_fv_bgtitle">FAQ</h2>
-    <p class="faq_fv_pan"><a href=""><i class="fa-solid fa-house-chimney"></i>ホーム</a> <i
-        class="fas fa-chevron-right faq_fv_fas"></i> 採用についてよくあるご質問</p>
+  <div class="under_fv">
+    <p class="under_fv_pan">
+      <a href=""><i class="fas fa-home faq_fv_home"></i>ホーム</a><i class="fas fa-chevron-right faq_fv_fas"></i>
+      採用についてよくあるご質問
+    </p>
+    <p class="under_fv_title">採用について<br class="faq_fv_br">よくあるご質問</p>
+    <h1 class="under_fv_sub">FAQ</h1>
+    <h2 class="under_fv_bgtitle">FAQ</h2>
   </div>
+
 
   <!-- question -->
   <div class="faq_question">
     <div class="faq_question_tab">
-      <p class="faq_question_tab_btn"><span class="faq_question_tab_btn_span active">応募に関する質問</span></p>
-      <p class="faq_question_tab_btn"><span class="faq_question_tab_btn_span">働き方に関する質問</span></p>
+      <p class="faq_question_tab_btn active">応募に関する質問<i class="fas fa-chevron-down faq_down"></i></p>
+      <p class="faq_question_tab_btn">働き方に関する質問<i class="fas fa-chevron-down faq_down"></i></p>
     </div>
     <div class="faq_question_panel">
       <div class="faq_question_panel_area active">
@@ -126,30 +132,146 @@
           応募に関する質問
         </h2>
         <hr>
-        <ul class="class="faq_question_list">
-          <li>
-            <div class="faq_question_list_item">
-
+        <div class="faq_question_list">
+          <div class="faq_question_items">
+            <input id="faq_question_item_apply1" class="faq_question_item" type="checkbox">
+            <label class="faq_question_item_label" for="faq_question_item_apply1">
+              <p class="faq_question_item_label_Q">Q.</p>
+              <p class="faq_question_item_label_Qcon">会社説明会に参加したいのですが、どうすれば良いですか？</p>
+            </label>
+            <div class="faq_question_item_content">
+              <p class="faq_question_item_answer_A">A.</p>
+              <p class="faq_question_item_answer">
+                まずは当社LINE＠、マイナビ、リクナビ、キャリタス就活よりエントリーください。（LINE＠がスムーズです）<br>エントリー後、１次試験のご案内をしています。企業説明会の日程等はHPよりご確認いただくか、お気軽に採用担当までご連絡ください。
+              </p>
             </div>
-
-          </li>
-        </ul>
+          </div>
+          <div class="faq_question_items">
+            <input id="faq_question_item_apply2" class="faq_question_item" type="checkbox">
+            <label class="faq_question_item_label" for="faq_question_item_apply2">
+              <p class="faq_question_item_label_Q">Q.</p>
+              <p class="faq_question_item_label_Qcon">ひまわり本社・お店の見学は可能ですか？</p>
+            </label>
+            <div class="faq_question_item_content">
+              <p class="faq_question_item_answer_A">A.</p>
+              <p class="faq_question_item_answer">
+                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
+
       <div class="faq_question_panel_area">
         <h2 class="faq_question_title">
           働き方に関する質問
         </h2>
         <hr>
-        <p>タブ22222</p>
-        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト22222</p>
+        <div class="faq_question_list">
+          <div class="faq_question_items">
+            <input id="faq_question_item_work1" class="faq_question_item" type="checkbox">
+            <label class="faq_question_item_label" for="faq_question_item_work1">
+              <p class="faq_question_item_label_Q">Q.</p>
+              <p class="faq_question_item_label_Qcon">お店の営業時間は？定休日はありますか？</p>
+            </label>
+            <div class="faq_question_item_content">
+              <p class="faq_question_item_answer_A">A.</p>
+              <p class="faq_question_item_answer">
+                お店の営業時間は９:００～２２:００で営業しております。店舗によっては２３:００まで営業を行っております。
+                定休日に関しては、いつでもお客様に利用していただけるよう定休日なしで営業しております。
+              </p>
+            </div>
+          </div>
+          <div class="faq_question_items">
+            <input id="faq_question_item_work2" class="faq_question_item" type="checkbox">
+            <label class="faq_question_item_label" for="faq_question_item_work2">
+              <p class="faq_question_item_label_Q">Q.</p>
+              <p class="faq_question_item_label_Qcon">勤務時間や休日はどのように決まりますか？</p>
+            </label>
+            <div class="faq_question_item_content">
+              <p class="faq_question_item_answer_A">A.</p>
+              <p class="faq_question_item_answer">
+                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+              </p>
+            </div>
+          </div>
+          <div class="faq_question_items">
+            <input id="faq_question_item_work3" class="faq_question_item" type="checkbox">
+            <label class="faq_question_item_label" for="faq_question_item_work3">
+              <p class="faq_question_item_label_Q">Q.</p>
+              <p class="faq_question_item_label_Qcon">配属先のお店の希望を出すことはできますか？</p>
+            </label>
+            <div class="faq_question_item_content">
+              <p class="faq_question_item_answer_A">A.</p>
+              <p class="faq_question_item_answer">
+                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+              </p>
+            </div>
+          </div>
+          <div class="faq_question_items">
+            <input id="faq_question_item_work4" class="faq_question_item" type="checkbox">
+            <label class="faq_question_item_label" for="faq_question_item_work4">
+              <p class="faq_question_item_label_Q">Q.</p>
+              <p class="faq_question_item_label_Qcon">勤務時間を教えてください</p>
+            </label>
+            <div class="faq_question_item_content">
+              <p class="faq_question_item_answer_A">A.</p>
+              <p class="faq_question_item_answer">
+                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+              </p>
+            </div>
+          </div>
+          <div class="faq_question_items">
+            <input id="faq_question_item_work5" class="faq_question_item" type="checkbox">
+            <label class="faq_question_item_label" for="faq_question_item_work5">
+              <p class="faq_question_item_label_Q">Q.</p>
+              <p class="faq_question_item_label_Qcon">ひまわりのお店でアルバイトはできますか？</p>
+            </label>
+            <div class="faq_question_item_content">
+              <p class="faq_question_item_answer_A">A.</p>
+              <p class="faq_question_item_answer">
+                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+              </p>
+            </div>
+          </div>
+          <div class="faq_question_items">
+            <input id="faq_question_item_work6" class="faq_question_item" type="checkbox">
+            <label class="faq_question_item_label" for="faq_question_item_work6">
+              <p class="faq_question_item_label_Q">Q.</p>
+              <p class="faq_question_item_label_Qcon">ドラッグストアで働く上で資格は必要ですか？ </p>
+            </label>
+            <div class="faq_question_item_content">
+              <p class="faq_question_item_answer_A">A.</p>
+              <p class="faq_question_item_answer">
+                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+              </p>
+            </div>
+          </div>
+          <div class="faq_question_items">
+            <input id="faq_question_item_work7" class="faq_question_item" type="checkbox">
+            <label class="faq_question_item_label" for="faq_question_item_work7">
+              <p class="faq_question_item_label_Q">Q.</p>
+              <p class="faq_question_item_label_Qcon">管理栄養士の資格を活かすことができますか？</p>
+            </label>
+            <div class="faq_question_item_content">
+              <p class="faq_question_item_answer_A">A.</p>
+              <p class="faq_question_item_answer">
+                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+    <p class="faq_question_top"><a href="">ページ上部に戻る</a></p>
   </div>
 
 
   <!-- footer -->
   <footer>
-    <img class="footer_up_arrow" src="image/common/up_arrow.png" alt="">
+    <a href="">
+      <img class="footer_up_arrow" src="image/common/up_arrow.png" alt="">
+    </a>
     <section class="footer_section">
       <div class="footer_logo">
         <ul>
@@ -286,9 +408,9 @@
 
   <script>
     // タブ切り替え
-    $('.faq_question .faq_question_tab_btn_span').click(function () {
-      var index = $('.faq_question .faq_question_tab_btn_span').index(this);
-      $('.faq_question .faq_question_tab_btn_span, .faq_question .faq_question_panel_area').removeClass('active');
+    $('.faq_question .faq_question_tab_btn').click(function () {
+      var index = $('.faq_question .faq_question_tab_btn').index(this);
+      $('.faq_question .faq_question_tab_btn, .faq_question .faq_question_panel_area').removeClass('active');
       $(this).addClass('active');
       $('.faq_question .faq_question_panel_area').eq(index).addClass('active');
     });
