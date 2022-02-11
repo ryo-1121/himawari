@@ -111,7 +111,7 @@
     top: 101%;
     left: 4%;
     font-size: 8.5vw;
-    font-size:clamp(30px, 7.5vw, 63px);
+    font-size: clamp(30px, 7.5vw, 63px);
     font-family: 'Shippori Mincho', serif;
     color: rgb(51, 51, 51);
     line-height: 1.308;
@@ -159,6 +159,7 @@
 
 .recruit_challenge_top_linkcont {
     display: none;
+
 }
 
 @media (min-width:750px) {
@@ -175,11 +176,32 @@
 .recruit_challenge_top_linkcont a {
     cursor: pointer;
     width: 48.88%;
+    position: relative;
 }
 
 
 .recruit_challenge_top_linkcont img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     width: 100%;
+    display: block;
+    -webkit-transition: .4s ease-in-out;
+    transition: .4s ease-in-out;
+}
+
+.recruit_challenge_top_linkcont_btn01:hover .recruit_challenge_top_linkcont_hover01 {
+    opacity: 0;
+}
+
+.recruit_challenge_top_linkcont_btn02:hover .recruit_challenge_top_linkcont_hover02 {
+    opacity: 0;
+}
+
+.recruit_challenge_top_linkcont a {
+    opacity: 1;
 }
 
 .recruit_challenge_top_linkcont_sp {
@@ -202,11 +224,30 @@
 .recruit_challenge_top_linkcont_sp a {
     cursor: pointer;
     width: 48.88%;
+    position: relative;
+    opacity: 1;
+    margin-top: 7.5%;
 }
 
 
 .recruit_challenge_top_linkcont_sp img {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     width: 100%;
+    display: block;
+    -webkit-transition: .4s ease-in-out;
+    transition: .4s ease-in-out;
+}
+
+.recruit_challenge_top_linkcont_sp_btn01:hover .recruit_challenge_top_linkcont_sp_hover01 {
+    opacity: 0;
+}
+
+.recruit_challenge_top_linkcont_sp_btn02:hover .recruit_challenge_top_linkcont_sp_hover02 {
+    opacity: 0;
 }
 
 /* ------------  Challenge_explain  ------------ */
@@ -461,7 +502,7 @@
 }
 
 .recruit_personality_maincont_box p {
-    font-size: clamp(30px,7.5vw,58px);
+    font-size: clamp(30px, 7.5vw, 58px);
     font-size: 7.5vw;
     font-family: agenda;
     color: rgb(243, 239, 230);
@@ -472,7 +513,7 @@
 
 @media (min-width:750px) {
     .recruit_personality_maincont_box p {
-        font-size: clamp(35px,4.19vw,58px);
+        font-size: clamp(35px, 4.19vw, 58px);
         padding-right: 14px;
     }
 }
@@ -647,6 +688,19 @@
 .recruit_personality_maincont_box_left img, .recruit_personality_maincont_box_right img {
     width: 100%;
     height: 100%;
+    position: absolute;
+}
+
+.recruit_personality_maincont_box_right img:hover {
+    opacity: 0;
+}
+
+.recruit_personality_maincont_box_left img:hover {
+    opacity: 0;
+}
+
+.recruit_personality_maincont_box_left a, .recruit_personality_maincont_box_right a {
+opacity: 1;
 }
 
 /* ------------  Pharmacist  ------------ */
@@ -774,7 +828,7 @@
 
 @media (min-width:750px) {
     .recuit_pharmacist_main_text h2 {
-        font-size: clamp(14px,1.4vw,21px);
+        font-size: clamp(14px, 1.4vw, 21px);
         line-height: 1.8;
         margin-bottom: 7%;
     }
@@ -801,6 +855,7 @@
 .recuit_pharmacist_main_linkcont {
     width: 66.66%;
     margin: 60px auto 0;
+    position: relative;
 }
 
 @media (min-width:750px) {
@@ -811,23 +866,47 @@
     }
 }
 
+
 .recuit_pharmacist_main_linkcont img {
     width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: block;
+    -webkit-transition: .4s ease-in-out;
+    transition: .4s ease-in-out;
 }
 
 @media (min-width:750px) {
     .recuit_pharmacist_main_linkcont img {
         width: 28.25%;
+        top: 50%;
+        left: 13%;
     }
 }
+
+.recuit_pharmacist_main_linkcont img:hover {
+    opacity: 0;
+}
+
+
+.recuit_pharmacist_main_linkcont a {
+    opacity: 1;
+}
+
+
+
 
 
 .recuit_pharmacist_main_interview {
     display: block;
     width: 92%;
-    margin: 0 auto;
+    margin: 35% auto 0;
     position: relative;
 }
+
 
 @media (min-width:750px) {
     .recuit_pharmacist_main_interview {
@@ -836,6 +915,7 @@
         width: 680px;
         justify-content: space-between;
         padding-left: 10%;
+        margin: 100px auto 0;
     }
 }
 
@@ -874,7 +954,7 @@
 
 @media (min-width:750px) {
     .recuit_pharmacist_main_interview_title_main {
-        font-size: clamp(54px,7.15vw,100px);
+        font-size: clamp(54px, 7.15vw, 100px);
         line-height: 0.72;
     }
 }
@@ -892,7 +972,7 @@
 
 @media (min-width:750px) {
     .recuit_pharmacist_main_interview_title_sub {
-        font-size: clamp(11px,1.5vw,21px);
+        font-size: clamp(11px, 1.5vw, 21px);
         top: 30%;
     }
 }
@@ -1174,6 +1254,7 @@
     position: absolute;
     top: 10%;
     left: -26%;
+    width: 45px;
 }
 
 @media (min-width:750px) {
@@ -1181,6 +1262,7 @@
         position: absolute;
         top: 30%;
         left: -2%;
+        width: 50px;
     }
 }
 
@@ -1188,15 +1270,34 @@
     position: absolute;
     top: 10%;
     right: -26%;
+    width: 45px;
 }
 
 @media (min-width:750px) {
     .recruit_welfare_main_right_arrow {
         position: absolute;
+        width: 50px;
         top: 30%;
         right: -2%;
     }
 }
+
+.recruit_welfare_main_right_arrow img, .recruit_welfare_main_left_arrow img {
+width: 100%;
+position: absolute;
+}
+
+.recruit_welfare_main_right_arrow img:hover {
+    opacity: 0;
+}
+
+.recruit_welfare_main_left_arrow img:hover {
+    opacity: 0;
+}
+
+.recruit_welfare_main a {
+    opacity: 1;
+    }
 
 .recruit_welfare_main_block {
     width: 92%;
@@ -1350,6 +1451,7 @@
     .recruit_education_item_detail h2 {
         font-size: 18px;
     }
+
     .recruit_education_item_detail h3 {
         font-size: 30px;
     }
@@ -1405,10 +1507,11 @@
     }
 }
 
-    @media (min-width: 1100px) {
+@media (min-width: 1100px) {
     .recuit_entry_message {
         font-size: 36px;
     }
+
     .recuit_entry_message_br {
         display: none;
     }
