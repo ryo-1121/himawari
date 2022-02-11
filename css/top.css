@@ -221,6 +221,12 @@
     font-family: "YuGothic";
     color: rgb(255, 255, 255);
     font-weight: bold;
+    border: none;
+}
+
+.fv_search_detail_submit:hover {
+    background-color: #707070;
+    opacity: 1;
 }
 
 .fa-search {
@@ -420,6 +426,7 @@
 .top_news_topic_link {
     margin: 0 auto 80px;
     width: 63.5%;
+    position: relative;
 }
 
 @media (min-width: 750px) {
@@ -431,6 +438,15 @@
 
 .top_news_topic_link img {
     width: 100%;
+    position: absolute;
+}
+
+.top_news_topic_link img:hover {
+    opacity: 0;
+}
+
+.top_news_topic_link a {
+    opacity: 1;
 }
 
 
@@ -439,12 +455,14 @@
 .top_about {
     background: linear-gradient(to top, #f3efe6 0%, #f3efe6 41%, #fff 41%, #fff 100%);
     padding-bottom: 10%;
+    margin-top: 45%;
 }
 
 @media (min-width: 750px) {
     .top_about {
         background: linear-gradient(to top, #f3efe6 0%, #f3efe6 71%, #fff 71%, #fff 100%);
         padding-bottom: 10%;
+        margin-top: 18%;
     }
 }
 
@@ -830,14 +848,31 @@
 }
 
 .top_interview_look {
-    margin-top: 140px;
+    margin: 140px auto 0;
     text-align: center;
+    position: relative;
+    width: 63.5%;
 }
 
 @media (min-width: 1050px) {
     .top_interview_look {
-        margin-top: 110px;
+        margin: 150px auto 0;
+        width: 298px;
     }
+}
+
+.top_interview_look img {
+    width: 100%;
+    position: absolute;
+    display: block;
+}
+
+.top_interview_look img:hover {
+    opacity: 0;
+}
+
+.top_interview_look a {
+    opacity: 1;
 }
 
 /* ------------  entry  ------------ */
@@ -858,7 +893,14 @@
 .top_entry_items_top {
     text-align: center;
     padding: 110px 0 35px;
-    position: relative
+    position: relative;
+    margin-top: 45%;
+}
+
+@media (min-width: 750px) {
+    .top_entry_items_top {
+        margin-top: 25%;
+    }
 }
 
 
