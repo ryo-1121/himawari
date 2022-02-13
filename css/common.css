@@ -257,6 +257,14 @@ header {
 
 
 /* ------------  仮想ページのファーストビュー  ------------ */
+.under_fv_fas {
+    margin: 0 14px;
+}
+
+.under_fv_home {
+    margin-right: 5px;
+}
+
 .under_fv {
     background-color: rgb(243, 239, 230);
     padding: 25px 0 60px;
@@ -289,7 +297,7 @@ header {
 
 .under_fv_title {
     margin-top: 25px;
-    font-size: 32px;
+    font-size: 26px;
     font-family: "YuGothic";
     color: rgb(51, 51, 51);
     font-weight: bold;
@@ -315,7 +323,7 @@ header {
 .under_fv_bgtitle {
     font-size: 110px;
     font-family: "Agenda";
-    color: rgba(255, 255, 255, 0.502);
+    color: rgba(255, 255, 255, 0.302);
     text-align: center;
     position: absolute;
     font-weight: inherit;
@@ -326,8 +334,8 @@ header {
 
 @media (min-width: 650px) {
     .under_fv_bgtitle {
-        font-size: 170px;
-        bottom: -90px;
+        font-size: 150px;
+        bottom: -80px;
     }
 }
 

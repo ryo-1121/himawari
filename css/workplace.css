@@ -1,0 +1,291 @@
+.content_title {
+  font-size: 30px;
+  font-family: "YuGothic";
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  line-height: 1;
+}
+
+.content_title:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  /* bottom: -15px; */
+  top: 60px;
+  display: inline-block;
+  width: 50px;
+  height: 4px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  /*位置調整*/
+  background-color: rgb(215, 11, 42);
+}
+
+
+/* ------------  fv  ------------ */
+.workplace_explain {
+  font-size: 16px;
+  font-family: "YuGothic";
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+  text-align: center;
+  margin: 60px auto;
+  max-width: 1000px;
+  width: 90%;
+}
+
+@media (min-width: 900px) {
+  .workplace_explain br {
+    display: none;
+  }
+
+  .workplace_explain {
+    margin: 80px auto;
+  }
+}
+
+.under_fv_bgtitle_workplace {
+  font-size: 50px;
+  top: 142px;
+}
+
+@media (min-width: 900px) {
+  .under_fv_bgtitle_workplace {
+    font-size: 150px;
+    top: auto;
+  }
+}
+
+/* ------------  workplace  ------------ */
+.workplace {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.workplace_map {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.workplace_map img {
+  margin-bottom: 35px;
+  width: 100%;
+  max-width: 509px;
+}
+
+.workplace_map p {
+  line-height: 1.875;
+  text-align: left;
+}
+
+@media (min-width: 1050px) {
+  .workplace_map {
+    display: flex;
+  }
+
+  .workplace_map img {
+    margin-bottom: 0px;
+  }
+
+  .workplace_map p {
+    padding-left: 20px;
+  }
+}
+
+
+
+
+/* ------------  support  ------------ */
+.workplace_surpport {
+  padding-top: 80px;
+}
+
+
+
+
+
+
+/* ------------  welfare  ------------ */
+.workplace_welfare {
+  padding-top: 80px;
+}
+
+
+
+
+/* ------------  gallery  ------------ */
+.workplace_gallery {
+  padding-top: 80px;
+  max-width: 1000px;
+  margin: 0 auto 100px;
+}
+
+@media (min-width: 850px) {
+  .workplace_gallery {
+    margin: 0 auto 125px;
+  }
+}
+
+.workplace_gallery_explain {
+  margin: 100px 0 45px;
+  font-size: 16px;
+  font-family: "YuGothic";
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+  line-height: 1.875;
+  text-align: center;
+}
+
+/* slick */
+.workplace_gallery_slider img {
+  border-width: 4px;
+  border-color: #d4d2d0;
+  border-style: solid;
+  border-radius: 5px;
+}
+
+.gallery_slider_thumb {
+  margin-bottom: 30px;
+}
+
+.gallery_slider_thumb_text {
+  position: relative;
+}
+
+.gallery_slider_thumb_text p {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  background-color: rgb(243, 239, 230, 0.902);
+  font-size: 14px;
+  font-family: "YuGothic";
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+  line-height: 2;
+  padding: 30px 0 25px;
+}
+
+.gallery_thumb .slick-slide {
+  margin: 0 9px !important;
+}
+
+.workplace_gallery .workplace_gallery_slider .gallery_thumb {
+  margin-bottom: 135px;
+}
+
+.slick-dots li button:before {
+  font-size: 80px !important;
+}
+
+.slick-dots {
+  bottom: -40px !important;
+}
+
+.gallery_thumb .slick-slide {
+  /*アクティブではないスライド*/
+  opacity: 1;
+}
+
+.gallery_thumb .slick-current {
+  /*アクティブなスライド*/
+  opacity: 0.5;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.workplace_gallery_link {
+  position: relative;
+  width: 90%;
+  margin: auto;
+}
+
+@media (min-width: 850px) {
+  .workplace_gallery_link {
+    width: auto;
+  }
+}
+
+.workplace_gallery_link_h1 {
+  font-size: 100px;
+  font-family: "Kozuka Gothic Pr6N";
+  color: rgba(243, 239, 230, 0.702);
+  letter-spacing: 20px;
+  line-height: 1;
+  margin-bottom: 70px;
+}
+
+.workplace_gallery_link_p {
+  font-size: 18px;
+  font-family: "YuGothic";
+  color: rgba(215, 11, 42, 0.8);
+  font-weight: bold;
+  line-height: 1;
+  position: absolute;
+  letter-spacing: 1px;
+  top: 60px;
+}
+
+@media (min-width: 850px) {
+  .workplace_gallery_link_h1 {
+    left: -100px;
+    top: 85px;
+    position: absolute;
+    -moz-transform: matrix(0, 1, -1, 0, 0, 0);
+    -webkit-transform: matrix(0, 1, -1, 0, 0, 0);
+    -ms-transform: matrix(0, 1, -1, 0, 0, 0);
+  }
+
+  .workplace_gallery_link_p {
+    left: -20px;
+    top: 30px;
+    -moz-transform: matrix(0, 1, -1, 0, 0, 0);
+    -webkit-transform: matrix(0, 1, -1, 0, 0, 0);
+    -ms-transform: matrix(0, 1, -1, 0, 0, 0);
+  }
+}
+
+.workplace_gallery_link_list {}
+
+@media (min-width: 850px) {
+  .workplace_gallery_link_list {
+    max-width: 814px;
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.workplace_gallery_link_item {
+  position: relative;
+  margin: 0 auto 30px;
+  max-width: 373px;
+}
+
+@media (min-width: 850px) {
+  .workplace_gallery_link_item {
+    margin: 0 0 30px;
+  }
+}
+
+.workplace_gallery_link_item img {
+  width: 100%;
+}
+
+.workplace_gallery_link_item img:first-child {
+  position: absolute;
+}
+
+.workplace_gallery_link_item img:hover {
+  opacity: 0;
+}
+
+.workplace_gallery_link_item a {
+  opacity: 1;
+}

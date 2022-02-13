@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/sanitize.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/recruit.css">
+  <link rel="stylesheet" href="css/top.css">
+  <link rel="stylesheet" href="css/interview.css">
+  <link rel="stylesheet" href="css/faq.css">
+  <link rel="stylesheet" href="css/workplace.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.google.com/specimen/Barlow" rel="stylesheet">
+
+  <title>workplace</title>
+
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <!-- slick -->
+  <link rel="stylesheet" type="text/css" href="css/slick.css">
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+  <script type="text/javascript" src="js/slick.min.js"></script>
+
+  <!-- font -->
+  <script src="https://kit.fontawesome.com/bcbec239cd.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
+  <!-- font -->
+  <script>
+    (function (d) {
+      var config = {
+        kitId: 'nuk1dnd',
+        scriptTimeout: 3000,
+        async: true
+      },
+        h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f % 7C % 7Ca && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+    })(document);
+  </script>
+</head>
+
+<body>
+  <header>
+    <div class="header_logo">
+      <a href="">
+        <img src="image/common/header_logo.png" alt="">
+      </a>
+    </div>
+    <ul class="header_menu">
+      <li class="header_menu_list">
+        <a href="">
+          <p class="header_menu_list_item1">ひまわりを知る</p>
+          <p class="header_menu_list_item2">ABOUT</p>
+        </a>
+      </li>
+      <li class="header_menu_list">
+        <a href="">
+          <p class="header_menu_list_item1">先輩インタビュー</p>
+          <p class="header_menu_list_item2">INTERVIEW</p>
+        </a>
+      </li>
+      <li class="header_menu_list">
+        <a href="">
+          <p class="header_menu_list_item1">応募の流れ</p>
+          <p class="header_menu_list_item2">ENTRY</p>
+        </a>
+      </li>
+      <li class="header_menu_list">
+        <a href="">
+          <p class="header_menu_list_item1">よくある質問</p>
+          <p class="header_menu_list_item2">FAQ</p>
+        </a>
+      </li>
+      <li class="header_menu_list header_sp">
+        <a href="">
+          <p class="header_menu_list_item1">新卒採用</p>
+          <p class="header_menu_list_item2">RECRUIT</p>
+        </a>
+      </li>
+      <li class="header_menu_list header_sp">
+        <a href="">
+          <p class="header_menu_list_item1">求人検索</p>
+          <p class="header_menu_list_item2">SEARCH</p>
+        </a>
+      </li>
+    </ul>
+    <div class="header_right_item">
+      <a href="">
+        <div class="header_recuit">
+          <img src="image/common/resume.png" alt="">
+          <p>新卒採用</p>
+        </div>
+      </a>
+      <a href="">
+        <div class="header_search">
+          <img src="image/common/magnifier.png" alt="">
+          <p>求人検索</p>
+        </div>
+      </a>
+    </div>
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+
+  <!-- fv -->
+  <div class="under_fv">
+    <p class="under_fv_pan">
+      <a href=""><i class="fas fa-home under_fv_home"></i>ホーム</a><i class="fas fa-chevron-right under_fv_fas"></i>
+      職場を知る（福利厚生）
+    </p>
+    <p class="under_fv_title">職場を知る（福利厚生）</p>
+    <h1 class="under_fv_sub">WORKPLACE</h1>
+    <h2 class="under_fv_bgtitle under_fv_bgtitle_workplace">WORKPLACE</h2>
+  </div>
+
+  <p class="workplace_explain">
+    入社後、長く働ける為の様々な支援を元に、<br>社員が長く働ける福利厚生など仕組み作りを行っています。
+  </p>
+
+
+  <!-- workplace -->
+  <div class="workplace">
+    <h1 class="content_title">勤務地選択制度</h1>
+    <div class="workplace_map">
+      <img src="image/workplace/workplace.png" alt="">
+      <p>入社時配属は、希望エリア内での配属を考慮します。<br>
+        勤務地を選択することで「エリア内だけの配属となる”エリア社員”と他エリア配属もありの”ナショナル社員”」を選択することができます。<br>
+        ※エリア社員となると拠点住所から片道40キロ圏内の店舗へ配属となります<br>
+        但し、エリア社員となる場合、基本となる賃金×95％との支給となります</p>
+    </div>
+  </div>
+
+
+  <!-- support -->
+  <div class="workplace_surpport">
+    <h1 class="content_title">子育て支援</h1>
+
+  </div>
+
+
+  <!-- welfare -->
+  <div class="workplace_welfare">
+    <h1 class="content_title">育児支援制度への参画</h1>
+  </div>
+
+
+  <!-- gallery -->
+  <div class="workplace_gallery">
+    <h1 class="content_title">ギャラリー</h1>
+    <p class="workplace_gallery_explain">
+      ひまわりでは労働組合、同好会など地域や仲間と楽しめる機会がたくさんあります。<br>
+      ※コロナ禍以前の写真も含みます
+    </p>
+    <div class="workplace_gallery_slider">
+      <div class="gallery_slider_thumb slider">
+        <div class="gallery_slider_thumb_text"><img src="image/workplace/gallery01.png" alt="">
+          <p>コロナ禍になる前ですが、新入社員歓迎会を弊社では運動会を行っています(^^)<br>
+            もちろん新入社員の交流が目的ですが、新入社員と一緒に課長やブロック長も一緒になって楽しんでいます！<br>
+            課長やブロック長は次の日筋肉痛になっています…（笑）お昼はみんなでBBQしました(^^)/
+          </p>
+        </div>
+        <div class="gallery_slider_thumb_text"><img src="image/workplace/gallery02.png" alt="">
+          <p>
+            テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          </p>
+        </div>
+        <div class="gallery_slider_thumb_text"><img src="image/workplace/gallery03.png" alt="">
+          <p>
+            テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          </p>
+        </div>
+        <div class="gallery_slider_thumb_text"><img src="image/workplace/gallery04.png" alt="">
+          <p>
+            テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          </p>
+        </div>
+        <div class="gallery_slider_thumb_text"><img src="image/workplace/gallery05.png" alt="">
+          <p>
+            テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          </p>
+        </div>
+        <div class="gallery_slider_thumb_text"><img src="image/workplace/gallery06.png" alt="">
+          <p>
+            テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          </p>
+        </div>
+      </div>
+      <div class="gallery_thumb slider">
+        <div><img src="image/workplace/gallery01.png" alt=""></div>
+        <div><img src="image/workplace/gallery02.png" alt=""></div>
+        <div><img src="image/workplace/gallery03.png" alt=""></div>
+        <div><img src="image/workplace/gallery04.png" alt=""></div>
+        <div><img src="image/workplace/gallery05.png" alt=""></div>
+        <div><img src="image/workplace/gallery06.png" alt=""></div>
+      </div>
+    </div>
+    <div class="workplace_gallery_link">
+      <h1 class="workplace_gallery_link_h1">LINK</h1>
+      <p class="workplace_gallery_link_p">関連情報</p>
+      <div class="workplace_gallery_link_list">
+        <div class="workplace_gallery_link_item">
+          <a href="">
+            <img src="image/workplace/link01.png" alt="">
+            <img src="image/workplace/link01_hover.png" alt="">
+          </a>
+        </div>
+        <div class="workplace_gallery_link_item">
+          <a href="">
+            <img src="image/workplace/link02.png" alt="">
+            <img src="image/workplace/link02_hover.png" alt="">
+          </a>
+        </div>
+        <div class="workplace_gallery_link_item">
+          <a href="">
+            <img src="image/workplace/link03.png" alt="">
+            <img src="image/workplace/link03_hover.png" alt="">
+          </a>
+        </div>
+        <div class="workplace_gallery_link_item">
+          <a href="">
+            <img src="image/workplace/link04.png" alt="">
+            <img src="image/workplace/link04_hover.png" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- footer -->
+  <footer>
+    <a href="">
+      <img class="footer_up_arrow" src="image/common/up_arrow.png" alt="">
+    </a>
+    <section class="footer_section">
+      <div class="footer_logo">
+        <ul>
+          <li>
+            <a href="">
+              <img src="image/common/footer_logo.png" alt="">
+            </a>
+          </li>
+          <li class="footer_sns">
+            <div>
+              <img src="image/common/sns_message.png" alt="">
+              <!-- <p>公式SNSはこちらｖ</p> -->
+            </div>
+            <div class="footer_sns_item">
+              <a href="">
+                <img class="footer_pc" src="image/common/Instagram_icon.png" alt="">
+                <img class="footer_sp" src="image/common/Instagram_icon_sp.png" alt="">
+              </a>
+              <a href="">
+                <img class="footer_pc" src="image/common/Twitter_icon.png" alt="">
+                <img class="footer_sp" src="image/common/Twitter_icon_sp.png" alt="">
+              </a>
+              <a href="">
+                <img class="footer_pc" src="image/common/YT_icon.png" alt="">
+                <img class="footer_sp" src="image/common/YT_icon_sp.png" alt="">
+              </a>
+              <a href="">
+                <img class="footer_pc" src="image/common/LINE_icon.png" alt="">
+                <img class="footer_sp footer_sns_item_last" src="image/common/LINE_icon_sp.png" alt="">
+              </a>
+            </div>
+          </li>
+          <li>
+            <a href="">
+              <img class="footer_pc" src="image/common/logo_welcia.png" alt="">
+              <img class="footer_sp" src="image/common/logo_welcia_sp.png" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer_menu1">
+        <ul>
+          <li>
+            <a href="">
+              求人検索
+            </a>
+          </li>
+          <li>
+            <a href="">
+              お知らせ
+            </a>
+          </li>
+          <li>
+            <a href="">
+              先輩インタビュー
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer_menu23">
+        <div class="footer_menu2">
+          <ul>
+            <li>
+              <a class="footer_menu_title" href="">
+                新卒採用
+              </a>
+            </li>
+            <hr>
+            <li>
+              <a class="footer_menu_item" href="">
+                薬剤師
+              </a>
+            </li>
+            <li>
+              <a class="footer_menu_item" href="">
+                総合職
+              </a>
+            </li>
+            <li>
+              <a class="footer_menu_item" href="">
+                よくあるご質問
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer_menu3">
+          <ul>
+            <li>
+              <a class="footer_menu_title" href="">
+                ププレひまわりを知る
+              </a>
+            </li>
+            <hr>
+            <li>
+              <a class="footer_menu_item" href="">
+                代表メッセージ・理念
+              </a>
+            </li>
+            <li>
+              <a class="footer_menu_item" href="">
+                会社概要・沿革
+              </a>
+            </li>
+            <li>
+              <a class="footer_menu_item" href="">
+                数字で知るププレひまわり
+              </a>
+            </li>
+            <li>
+              <a class="footer_menu_item" href="">
+                職場を知る
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <div class="footer_sitemap">
+      <p>
+        <a href="">
+          個人情報保護方針
+        </a>
+      </p>
+      <p>
+        <a href="">
+          サイトマップ
+        </a>
+      </p>
+    </div>
+    <div class="footer_copy">
+      Copyright &copy; Pupule Himawari
+    </div>
+  </footer>
+
+  <!-- slick -->
+  <script>
+    $(function () {
+      $('.gallery_slider_thumb').slick({
+        arrows: false,
+        autoplay: false,
+        asNavFor: '.gallery_thumb',
+      });
+
+      $('.gallery_thumb').slick({
+        arrows: false,
+        asNavFor: '.gallery_slider_thumb',
+        slidesToShow: 5,
+        centerMode: true,
+        focusOnSelect: true,
+        dots: true,
+      });
+    });
+  </script>
+
+  <script>
+    $(function () {
+      $('.hamburger').click(function () {
+        $(this).toggleClass('active');
+
+        if ($(this).hasClass('active')) {
+          $('.header_menu').addClass('active');
+        } else {
+          $('.header_menu').removeClass('active');
+        }
+      });
+      let $pagetop = $('.up_arrow');
+      $(window).on('scroll', function () {
+        //スクロール位置を取得
+        if ($(this).scrollTop() < 40) {
+          $pagetop.removeClass('isActive');
+        } else {
+          $pagetop.addClass('isActive');
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
