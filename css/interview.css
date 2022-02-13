@@ -434,7 +434,7 @@
     border-style: solid;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 3px 16px 0px rgba(80, 80, 80, 0.15);
-    margin-bottom: 3%;
+    margin-bottom: 5%;
     position: relative;
     padding: 1% 2.5% 0 2.5%;
     -webkit-filter: drop-shadow(0px 3px 5px rgba(80, 80, 80, 0.15));
@@ -449,11 +449,11 @@
     display: block;
     width: 0;
     height: 0;
-    left: 38%;
+    left: 45%;
     bottom: -10%;
-    border-top: 65px solid rgb(255, 255, 255);
-    border-right: 65px solid transparent;
-    border-left: 65px solid transparent;
+    border-top: 40px solid rgb(255, 255, 255);
+    border-right: 40px solid transparent;
+    border-left: 40px solid transparent;
 }
 
 @media (min-width: 750px) {
@@ -581,7 +581,7 @@
     border-style: solid;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 3px 16px 0px rgba(80, 80, 80, 0.15);
-    margin-bottom: 3%;
+    margin-bottom: 5%;
     margin-top: -1%;
     position: relative;
     padding: 1% 10% 0 10%;
@@ -603,16 +603,39 @@
     display: block;
     width: 0;
     height: 0;
-    left: 38%;
-    bottom: -10%;
-    border-top: 65px solid rgb(255, 255, 255);
-    border-right: 65px solid transparent;
-    border-left: 65px solid transparent;
+    left: 45%;
+    bottom: -12%;
+    border-top: 40px solid rgb(255, 255, 255);
+    border-right: 40px solid transparent;
+    border-left: 40px solid transparent;
 }
 
 @media (min-width: 750px) {
     .year_2st::before {
         left: 45%;
+    }
+}
+
+.year_5st {
+    width: 100%;
+    border-width: 0.5px;
+    border-color: rgb(199, 199, 199);
+    border-style: solid;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 3px 16px 0px rgba(80, 80, 80, 0.15);
+    margin-bottom: 3%;
+    margin-top: -1%;
+    position: relative;
+    padding: 1% 10% 0 10%;
+    -webkit-filter: drop-shadow(0px 3px 5px rgba(80, 80, 80, 0.15));
+    -moz-filter: drop-shadow(0px 3px 5px rgba(80, 80, 80, 0.15));
+    -ms-filter: drop-shadow(0px 3px 5px rgba(80, 80, 80, 0.15));
+    filter: drop-shadow(0px 3px 5px rgba(80, 80, 80, 0.15));
+}
+
+@media (min-width: 750px) {
+    .year_5st {
+        padding: 1% 2.5% 0 2.5%;
     }
 }
 
