@@ -98,11 +98,183 @@
 
 
 
+
 /* ------------  support  ------------ */
 .workplace_surpport {
   padding-top: 80px;
+  background: linear-gradient(to top, #f3efe6 0%, #f3efe6 80%, #fff 80%, #fff 100%);
+  padding-bottom: 3%;
 }
 
+@media (min-width: 750px) {
+  .workplace_surpport {
+    background: linear-gradient(to top, #f3efe6 0%, #f3efe6 65%, #fff 65%, #fff 100%);
+  }
+}
+
+.workplace_surpport_maincont {
+  max-width: 690px;
+  width: 92%;
+  margin: auto;
+}
+
+@media (min-width: 750px) {
+  .workplace_surpport_maincont {
+    max-width: 1020px;
+    width: 72.857%;
+
+  }
+}
+
+.workplace_surpport_maincont_assignment {
+  display: block;
+  margin-top: 10%;
+}
+
+@media (min-width: 750px) {
+  .workplace_surpport_maincont_assignment {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5%;
+  }
+}
+
+.workplace_surpport_maincont_assignment_image {
+  max-width: 690px;
+  width: 100%;
+}
+
+@media (min-width: 750px) {
+  .workplace_surpport_maincont_assignment_image {
+    max-width: 509px;
+    width: 49.9%;
+  }
+}
+
+.workplace_surpport_maincont_assignment_image img {
+  width: 100%;
+}
+
+.workplace_surpport_maincont_assignment_text {
+  max-width: 690px;
+  width: 100%;
+  margin-top: 5%;
+}
+
+@media (min-width: 750px) {
+  .workplace_surpport_maincont_assignment_text {
+    max-width: 480px;
+    width: 47.058%;
+    letter-spacing: 0.7px;
+    padding-top: 4%;
+    margin-top: 0;
+  }
+}
+
+.workplace_surpport_maincont_assignment_text p {
+  font-size: min(3.2vw, 24px);
+  font-family: "Yu Gothic";
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+  line-height: 1.875;
+  text-align: left;
+}
+
+@media (min-width: 750px) {
+  .workplace_surpport_maincont_assignment_text p {
+    font-size: min(1.15vw, 16px);
+    font-family: "Yu Gothic";
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    line-height: 1.875;
+    text-align: left;
+  }
+}
+
+.workplace_surpport_timesaving {
+  display: block;
+  max-width: 650px;
+  width: 94.2%;
+  margin: auto;
+  margin-bottom: 5%;
+}
+
+@media (min-width: 750px) {
+  .workplace_surpport_timesaving {
+    display: flex;
+    max-width: 900px;
+    width: 88.235%;
+    margin-left: auto;
+    margin-bottom: 5%;
+    justify-content: space-between;
+  }
+}
+
+.workplace_surpport_timesaving_image {
+  max-width: 650px;
+  width: 100%;
+  margin: auto;
+}
+
+@media (min-width: 750px) {
+  .workplace_surpport_timesaving_image {
+    max-width: 330px;
+    width: 36.67%;
+  }
+}
+
+.workplace_surpport_timesaving_image img {
+  width: 100%;
+}
+
+.workplace_surpport_timesaving_text {
+  max-width: 650px;
+  width: 100%;
+  margin-top: 5%;
+}
+
+@media (min-width: 750px) {
+  .workplace_surpport_timesaving_text {
+    max-width: 507px;
+    width: 57.6%;
+    margin-top: 2%;
+  }
+}
+
+.workplace_surpport_timesaving_text h1 {
+  font-size: min(3.6vw, 27px);
+  font-family: "Yu Gothic";
+  color: rgb(215, 11, 42);
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+@media (min-width: 750px) {
+  .workplace_surpport_timesaving_text h1 {
+    font-size: min(1.3vw, 18px);
+    text-align: left;
+  }
+}
+
+.workplace_surpport_timesaving_text p {
+  font-size: min(3.1vw, 23px);
+  font-family: "Yu Gothic";
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+  line-height: 1.7;
+  text-align: left;
+  letter-spacing: 1.6px;
+}
+
+@media (min-width: 750px) {
+  .workplace_surpport_timesaving_text p {
+    font-size: min(1vw, 14px);
+    line-height: 2.143;
+    text-align: left;
+    letter-spacing: 0.8px;
+  }
+}
 
 
 
@@ -111,6 +283,171 @@
 /* ------------  welfare  ------------ */
 .workplace_welfare {
   padding-top: 80px;
+}
+
+.workplace_welfare_maincont {
+  max-width: 690px;
+  width: 92%;
+  margin: auto;
+}
+
+@media (min-width: 750px) {
+  .workplace_welfare_maincont {
+    max-width: 1020px;
+    width: 72.857%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.workplace_welfare_maincont_box {
+  max-width: 690px;
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+@media (min-width: 750px) {
+  .workplace_welfare_maincont_box {
+    max-width: 330px;
+    width: 32.35%;
+  }
+}
+
+.workplace_welfare_maincont_imgbox {
+  width: 100%;
+  position: relative;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+}
+
+@media (min-width: 750px) {
+  .workplace_welfare_maincont_imgbox {
+    width: 100%;
+  }
+}
+
+.workplace_welfare_maincont_imgbox img {
+  width: 100%;
+}
+
+.workplace_welfare_subtitle01 {
+  position: absolute;
+  font-size: min(4.1vw, 30px);
+  font-family: "Yu Gothic";
+  color: rgb(215, 11, 42);
+  font-weight: bold;
+  background-color: rgb(243, 239, 230);
+  box-shadow: 0px 4px 7px 0px rgba(80, 80, 80, 0.13);
+  padding: 3% 0 3% 0;
+  top: 0;
+  left: 88%;
+  z-index: 99;
+  display: inline-block;
+}
+
+@media (min-width: 750px) {
+  .workplace_welfare_subtitle01 {
+    font-size: min(1.15vw, 16px);
+    left: 88%;
+  }
+}
+
+.workplace_welfare_maincont_textbox {
+  width: 100%;
+  margin-top: 5%;
+  font-size: min(3.1vw, 23px);
+  font-family: "Yu Gothic";
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+  line-height: 2.143;
+  text-align: left;
+}
+
+@media (min-width: 750px) {
+  .workplace_welfare_maincont_textbox {
+    font-size: min(1vw, 14px);
+    line-height: 2.143;
+  }
+}
+
+.workplace_welfare_benefits {
+  max-width: 690px;
+  width: 92%;
+  margin: 0 auto 5%;
+}
+
+@media (min-width: 750px) {
+  .workplace_welfare_benefits {
+    max-width: 1020px;
+    width: 72.857%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.workplace_welfare_benefits_image {
+  max-width: 690px;
+  width: 100%;
+}
+
+@media (min-width: 750px) {
+  .workplace_welfare_benefits_image {
+    max-width: 505px;
+    width: 49.51%;
+  }
+}
+
+.workplace_welfare_benefits_image img {
+  width: 100%;
+}
+
+.workplace_welfare_benefits_text {
+  max-width: 690px;
+  width: 100%;
+}
+
+@media (min-width: 750px) {
+  .workplace_welfare_benefits_text {
+    max-width: 477px;
+    width: 46.76%;
+  }
+}
+
+.workplace_welfare_benefits_text h1 {
+  font-size: min(3.6vw, 27px);
+  font-family: "Yu Gothic";
+  color: rgb(215, 11, 42);
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 3%;
+  margin-top: 5%;
+}
+
+@media (min-width: 750px) {
+  .workplace_welfare_benefits_text h1 {
+    font-size: min(1.3vw, 18px);
+    text-align: left;
+    margin-top: 0;
+  }
+}
+
+.workplace_welfare_benefits_text p {
+  font-size: min(3.1vw, 23px);
+  font-family: "Yu Gothic";
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+  line-height: 1.7;
+  text-align: left;
+  letter-spacing: 1.6px;
+}
+
+@media (min-width: 750px) {
+  .workplace_welfare_benefits_text p {
+    font-size: min(1vw, 14px);
+    line-height: 2.143;
+    text-align: left;
+    letter-spacing: 0.7px;
+  }
 }
 
 
