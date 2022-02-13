@@ -187,7 +187,7 @@
 
 @media (min-width: 750px) {
     .interview_comment_text h1 {
-        font-size: 1.43vw;
+        font-size: min(1.43vw, 20px);
         margin-bottom: 1.5%;
     }
 }
@@ -203,7 +203,7 @@
 
 @media (min-width: 750px) {
     .interview_comment_text p {
-        font-size: 1vw;
+        font-size: min(1vw, 14px);
         line-height: 2;
         font-weight: bold;
     }
@@ -254,7 +254,7 @@
 
 @media (min-width: 750px) {
     .interview_comment_wide h1 {
-        font-size: 1.43vw;
+        font-size: min(1.43vw, 20px);
     }
 }
 
@@ -269,7 +269,7 @@
 
 @media (min-width: 750px) {
     .interview_comment_wide p {
-        font-size: 1vw;
+        font-size: min(1vw, 14px);
         font-weight: bold;
         line-height: 2;
     }
@@ -281,28 +281,579 @@
 
 .interview_movie {
     width: 100%;
-    height: 480px;
+    max-height: 657px;
+    height: 95.1vw;
     background-color: #f3efe6;
+    margin-top: 5%;
+}
+
+@media (min-width: 750px) {
+    .interview_movie {
+        max-height: 480px;
+        height: 34.5vw;
+    }
 }
 
 .interview_movie_container {
-    max-width: 1020px;
-    width: 72.85%;
+    max-width: 680px;
+    width: 91%;
     margin: 0 auto;
     text-align: center;
+    position: relative;
+}
+
+@media (min-width: 750px) {
+    .interview_movie_container {
+        max-width: 1020px;
+        width: 72.85%;
+        padding-top: 5%;
+    }
 }
 
 .interview_movie_container_youtube {
-    max-width: 593px;
-    width: 58.14%;
-    height: 333px;
-    height: auto;
+    max-width: 689px;
+    width: 100%;
+    max-height: 388px;
+    height: 52vw;
+    vertical-align: middle;
+    margin-top: 25%;
+}
+
+@media (min-width: 750px) {
+    .interview_movie_container_youtube {
+        max-width: 593px;
+        width: 59%;
+        max-height: 333px;
+        height: 23.8vw;
+        vertical-align: middle;
+        margin-top: 0;
+    }
+}
+
+.interview_movie_container h1 {
+    font-size: min(22.7vw, 170px);
+    position: absolute;
+    font-family: agenda;
+    color: rgba(255, 255, 255, 0.702);
+    text-align: right;
+    font-weight: normal;
+    letter-spacing: 1px;
+    top: -11%;
+    left: 32%;
+
+}
+
+@media (min-width: 750px) {
+    .interview_movie_container h1 {
+        font-size: min(7.15vw, 100px);
+        position: absolute;
+        text-align: left;
+        text-orientation: mixed;
+        -ms-writing-mode: tb-rl;
+        writing-mode: vertical-rl;
+        -webkit-text-orientation: mixed;
+        letter-spacing: 5px;
+        top: 10%;
+        left: 0;
+    }
+}
+
+.interview_movie_container h2 {
+    font-size: min(4.1vw, 30px);
+    position: absolute;
+    font-family: "Yu Gothic";
+    color: rgba(215, 11, 42, 0.8);
+    font-weight: bold;
+    text-align: right;
+    letter-spacing: 2px;
+    top: 13%;
+    left: 59%;
+}
+
+@media (min-width: 750px) {
+    .interview_movie_container h2 {
+        position: absolute;
+        font-size: min(1.286vw, 20px);
+        text-align: left;
+        margin-top: 0;
+        text-orientation: sideways;
+        -ms-writing-mode: tb-rl;
+        writing-mode: vertical-rl;
+        letter-spacing: 2px;
+        top: 10%;
+        left: 2%;
+    }
 }
 
 
 
 /* ------------  career  ------------ */
 
+.interview_career {
+    max-width: 680px;
+    width: 91%;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 90%;
+}
+
+@media (min-width: 750px) {
+    .interview_career {
+        max-width: 1020px;
+        width: 72.85%;
+        margin-top: 8%;
+        margin-bottom: 15%;
+    }
+}
+
+.interview_career h1 {
+    font-size: min(6.4vw, 48px);
+    font-family: "Yu Gothic";
+    color: rgb(51, 51, 51);
+    text-align: center;
+}
+
+@media (min-width: 750px) {
+    .interview_career h1 {
+        font-size: min(2.15vw, 30px);
+    }
+}
+
+.interview_career hr {
+    background-color: rgb(215, 11, 42);
+    width: 50px;
+    height: 4px;
+    border: none;
+    margin: 2% auto 10%;
+}
+
+.year {
+    width: 100%;
+    border-width: 0.5px;
+    border-color: rgb(199, 199, 199);
+    border-style: solid;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 3px 16px 0px rgba(80, 80, 80, 0.15);
+    margin-bottom: 3%;
+    position: relative;
+    padding: 1% 2.5% 0 2.5%;
+    -webkit-filter: drop-shadow(0px 3px 5px rgba(80, 80, 80, 0.15));
+    -moz-filter: drop-shadow(0px 3px 5px rgba(80, 80, 80, 0.15));
+    -ms-filter: drop-shadow(0px 3px 5px rgba(80, 80, 80, 0.15));
+    filter: drop-shadow(0px 3px 5px rgba(80, 80, 80, 0.15));
+}
+
+.year::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    left: 38%;
+    bottom: -10%;
+    border-top: 65px solid rgb(255, 255, 255);
+    border-right: 65px solid transparent;
+    border-left: 65px solid transparent;
+}
+
+@media (min-width: 750px) {
+    .year::before {
+        left: 45%;
+    }
+}
+
+.year_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid;
+    border-color: rgba(51, 51, 51, 0.3);
+}
+
+
+.year_title_sub01 {
+    font-size: min(4.05vw, 30px);
+    font-family: "Yu Gothic";
+    width: 100%;
+    color: rgb(215, 11, 42);
+    font-weight: bold;
+}
+
+@media (min-width: 750px) {
+    .year_title_sub01 {
+        font-size: min(1.29vw, 18px);
+    }
+}
+
+.year_title_sub02 {
+    font-size: min(6.7vw, 50px);
+    font-family: "Agenda";
+    color: rgb(243, 238, 230);
+    font-weight: normal;
+    vertical-align: middle;
+    white-space: nowrap;
+
+}
+
+@media (min-width: 750px) {
+    .year_title_sub02 {
+        font-size: min(3.22vw, 45px);
+        text-align: right;
+    }
+}
+
+.year_text {
+    width: 99.5%;
+    display: block;
+    justify-content: space-between;
+    margin: 2% auto 2%;
+}
+
+@media (min-width: 750px) {
+    .year_text {
+        width: 99.5%;
+        display: flex;
+        justify-content: space-between;
+        margin: 2% auto 2%;
+    }
+}
+
+.year_text_container {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* test */
+.mobile_div {
+    float: right;
+    height: 4.3em
+}
+
+.mobile_img {
+    width: 48.297%;
+    float: right;
+    clear: both;
+}
+
+
+@media (min-width: 750px) {
+    .mobile_img {
+        width: 72.04%;
+        display: none;
+    }
+}
+
+.year_text_container p, .year_2st_text_container p {
+    font-size: 14px;
+    font-family: "Yu Gothic";
+    color: rgb(51, 51, 51);
+    line-height: 2;
+    text-align: left;
+    padding-top: 1%;
+}
+
+@media (min-width: 750px) {
+    .year_text_container p, .year_2st_text_container p {
+        font-size: 14px;
+        font-weight: bold;
+    }
+}
+
+.year_text_image {
+    display: none;
+}
+
+@media (min-width: 750px) {
+    .year_text_image {
+        width: 34.6%;
+        display: block;
+    }
+}
+
+.year_text_image img {
+    width: 100%;
+}
+
+.year_2st {
+    width: 100%;
+    border-width: 0.5px;
+    border-color: rgb(199, 199, 199);
+    border-style: solid;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 3px 16px 0px rgba(80, 80, 80, 0.15);
+    margin-bottom: 3%;
+    margin-top: -1%;
+    position: relative;
+    padding: 1% 10% 0 10%;
+    -webkit-filter: drop-shadow(0px 3px 5px rgba(80, 80, 80, 0.15));
+    -moz-filter: drop-shadow(0px 3px 5px rgba(80, 80, 80, 0.15));
+    -ms-filter: drop-shadow(0px 3px 5px rgba(80, 80, 80, 0.15));
+    filter: drop-shadow(0px 3px 5px rgba(80, 80, 80, 0.15));
+}
+
+@media (min-width: 750px) {
+    .year_2st {
+        padding: 1% 2.5% 0 2.5%;
+    }
+}
+
+.year_2st::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    left: 38%;
+    bottom: -10%;
+    border-top: 65px solid rgb(255, 255, 255);
+    border-right: 65px solid transparent;
+    border-left: 65px solid transparent;
+}
+
+@media (min-width: 750px) {
+    .year_2st::before {
+        left: 45%;
+    }
+}
+
+.year_2st_text_container {
+    width: 100%;
+}
+
+.interview_career_massege {
+    display: flex;
+    position: relative;
+    margin-top: 10%;
+}
+
+.interview_career_massege_image {
+    width: 72.794%;
+}
+
+@media (min-width: 750px) {
+    .interview_career_massege_image {
+        width: 40.686%;
+    }
+}
+
+.interview_career_massege_image img {
+    width: 100%;
+}
+
+.interview_career_massege_text {
+    width: 98.67%;
+    border-width: 0.5px;
+    border-color: rgb(199, 199, 199);
+    border-style: solid;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 3px 16px 0px rgba(80, 80, 80, 0.15);
+    position: absolute;
+    top: 80%;
+    right: 0;
+}
+
+@media (min-width: 750px) {
+    .interview_career_massege_text {
+        width: 65.78%;
+        top: 20%;
+        right: 0;
+    }
+}
+
+.interview_career_massege_text h3 {
+    width: 90.3%;
+    margin: 5% auto 0;
+    font-size: min(4.1vw, 30px);
+    font-family: "Yu Gothic";
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    border-bottom: 1px solid;
+    border-color: rgba(51, 51, 51, 0.3);
+    padding-bottom: 2%;
+}
+
+@media (min-width: 750px) {
+    .interview_career_massege_text h3 {
+        font-size: min(1.29vw, 18px);
+    }
+}
+
+.interview_career_massege_text p {
+    width: 90.3%;
+    margin: 3% auto;
+    font-size: min(3.8vw, 28px);
+    font-family: "Yu Gothic";
+    color: rgb(51, 51, 51);
+    line-height: 2.143;
+    text-align: left;
+}
+
+@media (min-width: 750px) {
+    .interview_career_massege_text p {
+        font-size: min(1vw, 14px);
+        font-weight: bold;
+    }
+}
+
 
 
 /* ------------  interview  ------------ */
+
+
+.interview_member {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 10%;
+    padding-top: 8%;
+    background: linear-gradient(to top, #fff 0%, #fff 75%, #f3efe6 75%, #f3efe6 100%);
+}
+
+@media (min-width: 750px) {
+    .interview_member {
+        padding-top: 8%;
+        background: linear-gradient(to top, #fff 0%, #fff 40%, #f3efe6 40%, #f3efe6 100%);
+    }
+}
+
+.interview_member h1 {
+    font-size: min(6.4vw, 48px);
+    font-family: "Yu Gothic";
+    color: rgb(51, 51, 51);
+    text-align: center;
+}
+
+@media (min-width: 750px) {
+    .interview_member h1 {
+        font-size: min(2.15vw, 30px);
+    }
+}
+
+.interview_member hr {
+    background-color: rgb(215, 11, 42);
+    width: 50px;
+    height: 4px;
+    border: none;
+    margin: 2% auto 5%;
+}
+
+.interview_member_main {
+    max-width: 680px;
+    width: 91%;
+    display: block;
+    margin: auto;
+}
+
+@media (min-width: 750px) {
+    .interview_member_main {
+        max-width: 1020px;
+        width: 72.85%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.interview_member_main_imagebox {
+    max-width: 390px;
+    width: 57.352%;
+    margin: 0 auto 15%;
+}
+
+@media (min-width: 750px) {
+    .interview_member_main_imagebox {
+        max-width: 287px;
+        width: 28.138%;
+        margin-bottom: 15%;
+    }
+}
+
+.interview_member_main_imagebox_pic {
+    background-color: #c5c5c5;
+    width: 99.99%;
+    border-radius: 5px;
+    margin-bottom: 8%;
+    position: relative;
+
+}
+
+.interview_member_main_imagebox_pic img {
+    width: 100%;
+}
+
+.interview_member_main_imagebox_text {
+    width: 100%;
+    font-size: min(3.75vw, 28px);
+    font-family: "Yu Gothic";
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+@media (min-width: 750px) {
+    .interview_member_main_imagebox_text {
+        font-size: min(1.29vw, 18px);
+    }
+}
+
+.interview_member_link {
+    margin: 0 auto;
+    max-width: 477px;
+    width: 70.15%;
+}
+
+@media (min-width: 750px) {
+    .interview_member_link {
+        max-width: 298px;
+        width: 29.215%;
+    }
+}
+
+.interview_member_link img {
+    width: 100%;
+}
+
+.interview_member_main_imagebox h2 {
+    position: absolute;
+    background-color: #333333;
+    color: #fff;
+    font-size: min(2.6vw, 20px);
+    font-family: "Yu Gothic";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    top: 75%;
+    left: 5%;
+    width: 42.5%;
+    text-align: center;
+}
+
+@media (min-width: 750px) {
+    .interview_member_main_imagebox h2 {
+        font-size: min(1vw, 14px);
+    }
+}
+
+.interview_member_main_imagebox h3 {
+    position: absolute;
+    background-color: #333333;
+    color: #fff;
+    font-size: min(2.6vw, 20px);
+    font-family: "Yu Gothic";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    top: 85%;
+    left: 5%;
+    width: 85%;
+    padding-left: 3%;
+}
+
+@media (min-width: 750px) {
+    .interview_member_main_imagebox h3 {
+        font-size: min(1vw, 14px);
+        width: 85%;
+    }
+}
+
+@media (min-width: 900px) {
+    .interview_member_main_imagebox h3 {
+        width: 71%;
+    }
+}
