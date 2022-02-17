@@ -371,6 +371,7 @@ footer {
 
 .footer_section {
     max-width: 660px;
+    width: 90%;
     margin: auto;
     padding-top: 80px;
     text-align: center;
@@ -389,6 +390,11 @@ footer {
     .footer_logo {
         margin-right: 180px;
     }
+}
+
+.footer_logo img {
+    /* width: 100%; */
+    max-width: auto;
 }
 
 .footer_sns {
@@ -414,6 +420,7 @@ footer {
 
 .footer_sns_item img {
     margin-right: 40px;
+    max-width: 40px;
 }
 
 .footer_sns_item .footer_sns_item_last {
@@ -445,7 +452,7 @@ footer {
 }
 
 .footer_menu1 {
-    margin: 50px 0 80px;
+    margin: 50px 0 50px;
 }
 
 .footer_menu1 ul {
