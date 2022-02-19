@@ -824,6 +824,7 @@ opacity: 1;
     color: rgb(215, 11, 42);
     font-weight: bold;
     line-height: 1.5;
+    margin: 6% auto;
 }
 
 @media (min-width:750px) {
@@ -831,6 +832,7 @@ opacity: 1;
         font-size: clamp(14px, 1.4vw, 21px);
         line-height: 1.8;
         margin-bottom: 7%;
+        
     }
 }
 
@@ -997,7 +999,7 @@ opacity: 1;
 
 .recuit_pharmacist_main_interview_maincont_01 p, .recuit_pharmacist_main_interview_maincont_02 p, .recuit_pharmacist_main_interview_maincont_03 P {
     color: #fff;
-    font-size: 14px;
+    font-size: 2.67vw;
     font-family: "Yu Gothic";
     line-height: 25px;
 
@@ -1005,7 +1007,7 @@ opacity: 1;
 
 @media (min-width:480px) {
     .recuit_pharmacist_main_interview_maincont_01 p, .recuit_pharmacist_main_interview_maincont_02 p, .recuit_pharmacist_main_interview_maincont_03 P {
-        font-size: 18px;
+        font-size: 2.67vw;
         line-height: 30px;
         font-weight: bold;
     }
@@ -1013,7 +1015,7 @@ opacity: 1;
 
 @media (min-width:600px) {
     .recuit_pharmacist_main_interview_maincont_01 p, .recuit_pharmacist_main_interview_maincont_02 p, .recuit_pharmacist_main_interview_maincont_03 P {
-        font-size: 21px;
+        font-size: 2.67vw;
         line-height: 33.6px;
     }
 }
@@ -1033,27 +1035,26 @@ opacity: 1;
 }
 
 .recuit_pharmacist_main_interview_maincont_occupation {
-    width: 120px;
+    width: 43.1%;
     height: 25px;
     background-color: #333333;
     margin: 0 0 10px 0;
     padding-left: 3%;
     position: absolute;
     top: 60%;
+    left: 5%;
 }
 
 @media (min-width:480px) {
     .recuit_pharmacist_main_interview_maincont_occupation {
-        width: 130px;
         height: 30px;
     }
 }
 
 @media (min-width:600px) {
     .recuit_pharmacist_main_interview_maincont_occupation {
-        width: 168px;
         height: 33.6px;
-        top: 65%;
+        top: 67%;
         left: 7%;
     }
 }
@@ -1062,7 +1063,7 @@ opacity: 1;
     .recuit_pharmacist_main_interview_maincont_occupation {
         width: 100px;
         height: 23px;
-        top: 50%;
+        top: 51%;
         left: 3%;
     }
 }
@@ -1071,7 +1072,7 @@ opacity: 1;
     .recuit_pharmacist_main_interview_maincont_occupation {
         width: 120px;
         height: 24px;
-        top: 55%;
+        top: 58%;
     }
 }
 
@@ -1079,29 +1080,30 @@ opacity: 1;
     .recuit_pharmacist_main_interview_maincont_occupation {
         width: 120px;
         height: 24px;
-        top: 65%;
+        top: 67%;
     }
 }
 
 .recuit_pharmacist_main_interview_maincont_name {
-    width: 190px;
+    width: 71.8%;
     height: 25px;
     background-color: #333333;
     padding-left: 3%;
     position: absolute;
     top: 70%;
+    left: 5%;
 }
 
 @media (min-width:480px) {
     .recuit_pharmacist_main_interview_maincont_name {
-        width: 240px;
+        width: 71.8%;
         height: 30px;
     }
 }
 
 @media (min-width:600px) {
     .recuit_pharmacist_main_interview_maincont_name {
-        width: 280px;
+        width: 71.8%;
         height: 33.6px;
         top: 75%;
         left: 7%;

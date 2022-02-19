@@ -16,17 +16,15 @@
     rel="stylesheet">
   <link href="https://fonts.google.com/specimen/Barlow" rel="stylesheet">
 
-  <!-- slick slider -->
-  <link href="js/slick-theme.css" rel="stylesheet" type="text/css">
-  <link href="js/slick.css" rel="stylesheet" type="text/css">
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
-  <script type="text/javascript" src="js/slick.min.js"></script>
-
-
   <title>top</title>
 
   <!-- jquery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <!-- slick -->
+  <link rel="stylesheet" type="text/css" href="css/slick.css">
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+  <script type="text/javascript" src="js/slick.min.js"></script>
 
   <!-- font -->
   <script src="https://kit.fontawesome.com/bcbec239cd.js" crossorigin="anonymous"></script>
@@ -140,16 +138,11 @@
         <li><img src="image/top/top_main_slide07.png" alt=""></li>
       </ul>
     </div>
-    <div class="top_fv_sns">
-      <div class="top_fv_sns_image"><a href="#"><img src="image/top/top_line01.png" alt=""></a></div>
-      <div class="top_fv_sns_image"><a href="#"><img src="image/top/top_line01.png" alt=""></a></div>
-      <div class="top_fv_sns_image"><a href="#"><img src="image/top/top_line01.png" alt=""></a></div>
-    </div>
-    <div class="top_fv_sns_sp">
-      <div class="top_fv_sns_sp_image"><a href="#"><img src="image/top/top_line_sp_left.png" alt=""></a></div>
-      <div class="top_fv_sns_sp_image center"><a href="#"><img src="image/top/top_line_sp.png" alt=""></a></div>
-      <div class="top_fv_sns_sp_image"><a href="#"><img src="image/top/top_line_sp_right.png" alt=""></a></div>
-    </div>
+    <ul class="top_fv_sns">
+      <li class="top_fv_sns_image"><a href="#"><img src="image/top/top_line01.png" alt=""></a></li>
+      <li class="top_fv_sns_image"><a href="#"><img src="image/top/top_line01.png" alt=""></a></li>
+      <li class="top_fv_sns_image"><a href="#"><img src="image/top/top_line01.png" alt=""></a></li>
+    </ul>
 
     <!--  search  -->
     <div class="fv_search">
@@ -194,6 +187,7 @@
   <div class="top_news">
     <h1>NEWS</h1>
     <h2>お知らせ</h2>
+    <p class="top_news_side">NEWS</p>
     <div class="top_news_topic_left_arrow"><a href="#"><img src="image/common/left_arrow.png" alt=""></a></div>
     <div class="top_news_topic_right_arrow"><a href="#"><img src="image/common/right_arrow.png" alt=""></a></div>
     <ul class="top_news_topic">
@@ -471,6 +465,22 @@
           $pagetop.addClass('isActive');
         }
       });
+    });
+
+    $('.top_fv_sns').slick({
+      autoplay: true,
+      autoplaySpeed: 5000,
+      dots: true,
+      slidesToShow: 3,
+      responsive: [{
+        breakpoint: 750,
+        settings: {
+          slidesToShow: 1,
+          centerMode: true,
+          centerPadding: '45px',
+        }
+      }
+      ]
     });
   </script>
 </body>

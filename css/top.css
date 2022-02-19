@@ -91,7 +91,10 @@
     width: 100%;
     margin: 0 auto 120px;
     justify-content: space-between;
-    display: none;
+}
+
+.slick-active {
+    margin: 0 45px;
 }
 
 @media (min-width: 750px) {
@@ -118,27 +121,6 @@
 
 .top_fv_sns_image img {
     width: 100%;
-}
-
-.top_fv_sns_sp {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-@media (min-width: 750px) {
-    .top_fv_sns_sp {
-        width: 59.33%;
-        display: none;
-    }
-}
-
-.top_fv_sns_sp img {
-    width: 100%;
-}
-
-.top_fv_sns_sp_image.center {
-    margin: 0 45px;
 }
 
 /* search */
@@ -245,7 +227,10 @@
     font-weight: bold;
     font-size: 13px;
     font-family: "YuGothic";
+}
 
+.slick-dotted.slick-slider.top_fv_sns {
+    margin-bottom: 0;
 }
 
 /* ------------  news  ------------ */
@@ -254,18 +239,13 @@
     max-width: 750px;
     width: 100%;
     margin: 20% auto 85px;
+    position: relative;
 }
 
 @media (min-width: 750px) {
     .top_news {
-        max-width: 750px;
-        margin: 0 auto 85px;
-    }
-}
-
-@media (min-width: 1050px) {
-    .top_news {
-        max-width: 1020px;
+        margin: 15% auto 85px;
+        max-width: 100%;
     }
 }
 
@@ -276,7 +256,6 @@
     color: rgb(215, 11, 42);
     line-height: 1.5;
     letter-spacing: 4px;
-    font-weight: inherit;
 }
 
 @media (min-width: 750px) {
@@ -301,6 +280,23 @@
     }
 }
 
+.top_news_side {
+    display: none;
+}
+
+@media (min-width: 750px) {
+    .top_news_side {
+        display: block;
+        font-size: min(12.15vw, 170px);
+        font-family: agenda;
+        color: rgba(243, 239, 230, 0.502);
+        position: absolute;
+        transform: rotate(90deg);
+        top: 15%;
+        left: -10%;
+    }
+}
+
 .top_news_topic {
     max-width: 750px;
     width: 100%;
@@ -308,9 +304,12 @@
     margin: 0 auto 70px;
 }
 
+
+
 @media (min-width: 750px) {
     .top_news_topic {
         max-width: 1020px;
+        width: 72.857%;
         display: flex;
         justify-content: space-between;
         margin: 0 auto 70px;
@@ -454,7 +453,7 @@
 /* ------------  about  ------------ */
 
 .top_about {
-    background: linear-gradient(to top, #f3efe6 0%, #f3efe6 41%, #fff 41%, #fff 100%);
+    background: linear-gradient(to top, #f3efe6 0%, #f3efe6 60%, #fff 60%, #fff 100%);
     padding-bottom: 10%;
     margin-top: 45%;
 }
@@ -471,7 +470,6 @@
     text-align: center;
     font-size: 8.02vw;
     font-family: agenda;
-    font-weight: inherit;
     color: rgb(215, 11, 42);
     line-height: 1.5;
     letter-spacing: 4px;
@@ -713,7 +711,6 @@
     max-width: 305px;
     font-size: clamp(35px, 3.5vw, 48px);
     font-family: agenda;
-    font-weight: inherit;
     color: rgb(215, 11, 42);
     line-height: 1.5;
     transform: rotate(90deg);
@@ -738,13 +735,13 @@
     .top_interview h2 {
         left: -7%;
         right: auto;
-        top: 0;
+        top: 14%;
     }
-    
+
     .top_interview h3 {
         right: auto;
-        left: -7%;
-        top: 0;
+        left: -5%;
+        top: 6%;
     }
 }
 
