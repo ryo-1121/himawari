@@ -243,10 +243,10 @@
     </div>
   </div>
   <ul class="top_fv_sns">
-    <li class="top_fv_sns_image"><a href="#"><img src="image/top/top_line01.png" alt=""></a></li>
-    <li class="top_fv_sns_image"><a href="#"><img src="image/top/top_line01.png" alt=""></a></li>
-    <li class="top_fv_sns_image"><a href="#"><img src="image/top/top_line01.png" alt=""></a></li>
-    <li class="top_fv_sns_image"><a href="#"><img src="image/top/top_line01.png" alt=""></a></li>
+    <li class="top_fv_sns_image"><div><a href="#"><img src="image/top/top_line01.png" alt=""></a></div></li>
+    <li class="top_fv_sns_image"><div><a href="#"><img src="image/top/top_line01.png" alt=""></a></div></li>
+    <li class="top_fv_sns_image"><div><a href="#"><img src="image/top/top_line01.png" alt=""></a></div></li>
+    <li class="top_fv_sns_image"><div><a href="#"><img src="image/top/top_line01.png" alt=""></a></div></li>
   </ul>
 
 
@@ -258,23 +258,23 @@
     <div class="top_news_topic_left_arrow"><a href="#"><img src="image/common/left_arrow.png" alt=""></a></div>
     <div class="top_news_topic_right_arrow"><a href="#"><img src="image/common/right_arrow.png" alt=""></a></div>
     <ul class="top_news_topic">
-      <li class="top_news_topic_box"><a href="">
+      <li class="top_news_topic_box"><div><a href="">
           <h3>カテゴリー</h3><img src="image/top/top_news01.png" alt="">
           <p>タイトルタイトルタイトルタイトル
             タイトルタイトルタイトル</p><span>2022.01.30</span>
-        </a>
+        </a></div>
       </li>
-      <li class="top_news_topic_box"><a href="">
+      <li class="top_news_topic_box"><div><a href="">
           <h3>カテゴリー</h3><img src="image/top/top_news01.png" alt="">
           <p>タイトルタイトルタイトルタイトル
             タイトルタイトルタイトル</p><span>2022.01.30</span>
-        </a>
+        </a></div>
       </li>
-      <li class="top_news_topic_box"><a href="">
+      <li class="top_news_topic_box"><div><a href="">
           <h3>カテゴリー</h3><img src="image/top/top_news01.png" alt="">
           <p>タイトルタイトルタイトルタイトル
             タイトルタイトルタイトル</p><span>2022.01.30</span>
-        </a>
+        </a></div>
       </li>
     </ul>
     <div class="top_news_topic_link"><a href="#"><img src="image/top/top_news02hover.png" alt=""><img
@@ -351,7 +351,6 @@
   </div>
 
 
-
   <!-- Entry -->
   <div class="top_entry">
     <div class="top_entry_items_top">
@@ -376,8 +375,6 @@
       </a>
     </div>
   </div>
-
-
 
 
   <!-- footer -->
@@ -492,8 +489,9 @@
       });
     });
 
+    // 広告のslick
     $('.top_fv_sns').slick({
-      autoplay: false,
+      autoplay: true,
       autoplaySpeed: 5000,
       dots: true,
       slidesToShow: 3,
@@ -504,8 +502,21 @@
           centerMode: true,
           centerPadding: '45px',
         }
-      }
-      ]
+      }]
+    });
+
+    // お知らせのslick
+    $('.top_news_topic').slick({
+      mobileFirst: true,
+      autoplay: false,
+      autoplaySpeed: 5000,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: true,
+      responsive: [{
+        breakpoint: 750,
+        settings: 'unslick'
+      }]
     });
   </script>
 
