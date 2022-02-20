@@ -241,7 +241,7 @@
   }
 }
 
-.workplace_surpport_timesaving_text h1 {
+.workplace_surpport_timesaving_text h2 {
   font-size: min(3.6vw, 27px);
   font-family: "Yu Gothic";
   color: rgb(215, 11, 42);
@@ -251,7 +251,7 @@
 }
 
 @media (min-width: 750px) {
-  .workplace_surpport_timesaving_text h1 {
+  .workplace_surpport_timesaving_text h2 {
     font-size: min(1.3vw, 18px);
     text-align: left;
   }
@@ -413,7 +413,7 @@
   }
 }
 
-.workplace_welfare_benefits_text h1 {
+.workplace_welfare_benefits_text h2 {
   font-size: min(3.6vw, 27px);
   font-family: "Yu Gothic";
   color: rgb(215, 11, 42);
@@ -424,7 +424,7 @@
 }
 
 @media (min-width: 750px) {
-  .workplace_welfare_benefits_text h1 {
+  .workplace_welfare_benefits_text h2 {
     font-size: min(1.3vw, 18px);
     text-align: left;
     margin-top: 0;
@@ -576,7 +576,7 @@
   }
 }
 
-.workplace_gallery_link_h1 {
+.workplace_gallery_link_h2 {
   font-size: 100px;
   font-family: "Kozuka Gothic Pr6N";
   color: rgba(243, 239, 230, 0.702);
@@ -597,7 +597,7 @@
 }
 
 @media (min-width: 850px) {
-  .workplace_gallery_link_h1 {
+  .workplace_gallery_link_h2 {
     left: -100px;
     top: 85px;
     position: absolute;
