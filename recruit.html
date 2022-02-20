@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/recruit.css">
   <link rel="stylesheet" href="css/top.css">
+  <link rel="stylesheet" href="./common.css" />
+    <link rel="stylesheet" href="./recruit-hero/recruit-hero.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&display=swap"
@@ -102,45 +104,27 @@
   </header>
 
   <!-- Challenge -->
-  <div class="recruit_challenge">
-    <div class="recruit_challenge_top">
-      <ul class="recruit_challenge_top_imgcont01">
-        <li><img src="image/recruit/challenge01.png" alt=""></li>
-      </ul>
-      <ul class="recruit_challenge_top_imgcont01_sp">
-        <li><img src="image/recruit/challenge01_sp.png" alt=""></li>
-      </ul>
-      <div class="recruit_challenge_top_imgcont02">
-        <img src="image/recruit/challenge02.png" alt="">
-        <p><span>これは、<br>
-            たいせつな人の<br>
-            笑顔を守る<img class="recruit_challenge_message" src="image/recruit/challenge_message.png" alt="">だ。</span></p>
+  <div class="RecruitHero js-RecruitHero">
+    <div class="RecruitHero__container">
+      <div class="RecruitHero__mainWrapper">
+        <div class="RecruitHero__main" data-animate>
+          <div class="RecruitHero__photo1"></div>
+          <div class="RecruitHero__phrase">
+            <p>
+              <img src="./recruit-hero/image/phrase-1.svg" alt="これは、" data-animate />
+              <img src="./recruit-hero/image/phrase-2.svg" alt="たいせつな人の" data-animate />
+              <img src="./recruit-hero/image/phrase-3.svg" alt="笑顔を守る挑戦だ。" data-animate />
+              <img src="./recruit-hero/image/phrase-challenge.svg" alt="Challenge" data-animate />
+            </p>
+          </div>
+          <div class="RecruitHero__photo2"></div>
+        </div>
       </div>
-      <div class="recruit_challenge_top_imgcont02_sp">
-        <img src="image/recruit/challenge02_sp.png" alt="">
-        <p><span>これは、<br>
-            たいせつな人の<br>
-            笑顔を守る<img class="recruit_challenge_message" src="image/recruit/challenge_message.png" alt="">だ。</span></p>
-      </div>
-      <ul class="recruit_challenge_top_imgcont03">
-        <li></li><img src="image/recruit/challenge03.png" alt=""></li>
-      </ul>
-      <ul class="recruit_challenge_top_imgcont03_sp">
-        <li><img src="image/recruit/challenge03_sp.png" alt=""></li>
-      </ul>
-      <div class="recruit_challenge_top_linkcont">
-        <a class="recruit_challenge_top_linkcont_btn01" href="#"><img src="image/recruit/challenge04_hover.png"
-            alt=""><img class="recruit_challenge_top_linkcont_hover01" src="image/recruit/challenge04.png" alt=""></a>
-        <a class="recruit_challenge_top_linkcont_btn02" href="#"><img src="image/recruit/challenge05_hover.png"
-            alt=""><img class="recruit_challenge_top_linkcont_hover02" src="image/recruit/challenge05.png" alt=""></a>
-      </div>
-      <div class="recruit_challenge_top_linkcont_sp">
-        <a class="recruit_challenge_top_linkcont_sp_btn01" href="#"><img src="image/recruit/challenge04_sp_hover.png"
-            alt=""><img class="recruit_challenge_top_linkcont_sp_hover01" src="image/recruit/challenge04_sp.png"
-            alt=""></a>
-        <a class="recruit_challenge_top_linkcont_sp_btn02" href="#"><img src="image/recruit/challenge05_sp_hover.png"
-            alt=""><img class="recruit_challenge_top_linkcont_sp_hover02" src="image/recruit/challenge05_sp.png"
-            alt=""></a>
+      <div class="RecruitHero__buttons">
+        <p>
+          <span data-animate><a href="#">薬剤師はこちら</a></span>
+          <span data-animate><a href="#">総合職はこちら</a></span>
+        </p>
       </div>
     </div>
   </div>
@@ -585,6 +569,20 @@
       });
     });
   </script>
+
+<script src="./recruit-hero/recruit-hero.js"></script>
+<script>
+  recruitHero({
+    images: [
+      // 切り替え画像の設定
+      { src: './recruit-hero/image/photo1-lg.jpg', alt: 'altを入れてね' },
+      { src: './recruit-hero/image/photo2-lg.jpg', alt: 'altを入れてね' },
+      { src: './recruit-hero/image/photo-dummy.webp', alt: 'altを入れてね' },
+      { src: './recruit-hero/image/photo-dummy2.webp', alt: 'altを入れてね' },
+    ],
+    interval: 4000,
+  })
+</script>
 </body>
 
 </html>

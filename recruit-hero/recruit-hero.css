@@ -198,6 +198,7 @@
   background-color: #d70b2a;
   color: #fff;
   text-decoration: none;
+  cursor: pointer;
 
   /* line */
   background-image: linear-gradient(#fff, #fff);
@@ -224,6 +225,11 @@
     height: 4.4em;
     background-size: 2.6em calc(1em * 2 / 18);
   }
+}
+
+.RecruitHero__buttons a:hover {
+  background-color: #333333;
+  opacity: 1;
 }
 
 /* ------------------------------------------
