@@ -469,8 +469,21 @@
     }
 }
 
+.recruit_personality_maincont li {
+    position: relative;
+    padding-bottom: 20%;
+}
+
+@media (min-width:750px) {
+    .recruit_personality_maincont li {
+        position: relative;
+        padding-bottom: 3%;
+    }
+}
+
 .recruit_personality_maincont_img {
     width: 93%;
+    position: relative;
 }
 
 @media (min-width:750px) {
@@ -487,7 +500,7 @@
 .recruit_personality_maincont_box {
     width: 93.9%;
     position: absolute;
-    top: 70%;
+    top: 22%;
     right: 0;
 }
 
@@ -496,8 +509,8 @@
         max-width: 605px;
         width: 60.5%;
         position: absolute;
-        top: 0;
-        right: 0;
+        top: 5.5%;
+        right: 10px;
     }
 }
 
@@ -700,14 +713,14 @@
 }
 
 .recruit_personality_maincont_box_left a, .recruit_personality_maincont_box_right a {
-opacity: 1;
+    opacity: 1;
 }
 
 /* ------------  Pharmacist  ------------ */
 
 .recuit_pharmacist {
     width: 100%;
-    margin: 103% auto 0;
+    margin: 30% auto 0;
     background: linear-gradient(to top, #f3efe6 0%, #f3efe6 90%, #fff 90%, #fff 100%);
     padding-bottom: 30px;
 }
@@ -715,7 +728,7 @@ opacity: 1;
 @media (min-width:750px) {
     .recuit_pharmacist {
         width: 100%;
-        margin: 45% auto 0;
+        margin: 30% auto 0;
         background: linear-gradient(to top, #f3efe6 0%, #f3efe6 65%, #fff 65%, #fff 100%);
         padding-bottom: 40px;
     }
@@ -723,7 +736,7 @@ opacity: 1;
 
 @media (min-width:900px) {
     .recuit_pharmacist {
-        margin: 185px auto 85px;
+        margin: 10% auto 85px;
         padding-bottom: 85px;
     }
 }
@@ -832,7 +845,7 @@ opacity: 1;
         font-size: clamp(14px, 1.4vw, 21px);
         line-height: 1.8;
         margin-bottom: 7%;
-        
+
     }
 }
 
@@ -1181,7 +1194,7 @@ opacity: 1;
 
 .recruit_welfare {
     width: 100%;
-    margin: 12% auto 0;
+    margin: 12% auto 25%;
 }
 
 @media (min-width:750px) {
@@ -1223,11 +1236,12 @@ opacity: 1;
 }
 
 .recruit_welfare_main {
-    width: 66%;
-    max-width: 495px;
+    width: 100%;
+    /* max-width: 495px; */
     display: block;
     margin: 0 auto 250px;
     position: relative;
+    padding-bottom: 7%;
 }
 
 @media (min-width:750px) {
@@ -1237,6 +1251,7 @@ opacity: 1;
         display: flex;
         justify-content: space-between;
         margin: 0 auto 30px;
+        padding-bottom: 3%;
     }
 }
 
@@ -1252,63 +1267,85 @@ opacity: 1;
     }
 }
 
-.recruit_welfare_main_left_arrow {
+.slick_recruit_left_arrow:hover, .slick_recruit_right_arrow:hover {
+    opacity: 0.8;
+}
+
+.slick_recruit_left_arrow, .slick_recruit_right_arrow {
     position: absolute;
+    z-index: 99;
     top: 10%;
-    left: -26%;
-    width: 45px;
+    cursor: pointer;
+}
+
+.slick_recruit_left_arrow {
+    left: -5%;
+}
+
+.slick_recruit_right_arrow {
+    right: -5%;
 }
 
 @media (min-width:750px) {
-    .recruit_welfare_main_left_arrow {
-        position: absolute;
+    .slick_recruit_left_arrow, .slick_recruit_right_arrow {
         top: 30%;
-        left: -2%;
-        width: 50px;
     }
-}
 
-.recruit_welfare_main_right_arrow {
-    position: absolute;
-    top: 10%;
-    right: -26%;
-    width: 45px;
-}
+    .slick_recruit_left_arrow {
+        left: -2%;
+    }
 
-@media (min-width:750px) {
-    .recruit_welfare_main_right_arrow {
-        position: absolute;
-        width: 50px;
-        top: 30%;
+    .slick_recruit_right_arrow {
         right: -2%;
     }
 }
 
-.recruit_welfare_main_right_arrow img, .recruit_welfare_main_left_arrow img {
-width: 100%;
-position: absolute;
+.slick_welfare_left_arrow:hover, .slick_welfare_right_arrow:hover {
+    opacity: 0.8;
 }
 
-.recruit_welfare_main_right_arrow img:hover {
-    opacity: 0;
+.slick_welfare_left_arrow, .slick_welfare_right_arrow {
+    position: absolute;
+    z-index: 99;
+    top: 30%;
+    cursor: pointer;
 }
 
-.recruit_welfare_main_left_arrow img:hover {
-    opacity: 0;
+.slick_welfare_left_arrow {
+    left: 0%;
+}
+
+.slick_welfare_right_arrow {
+    right: 0%;
+}
+
+@media (min-width:750px) {
+    .slick_welfare_left_arrow, .slick_welfare_right_arrow {
+        top: 30%;
+    }
+
+    .slick_welfare_left_arrow {
+        left: -2%;
+    }
+
+    .slick_welfare_right_arrow {
+        right: -2%;
+    }
 }
 
 .recruit_welfare_main a {
     opacity: 1;
-    }
+}
 
 .recruit_welfare_main_block {
     width: 92%;
-    margin: 0 auto;
+    margin: 0 10px;
 }
 
 @media (min-width:750px) {
     .recruit_welfare_main_block {
         width: 32.35%;
+        margin: 0 8px;
     }
 }
 

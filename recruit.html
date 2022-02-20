@@ -11,17 +11,22 @@
   <link rel="stylesheet" href="css/recruit.css">
   <link rel="stylesheet" href="css/top.css">
   <link rel="stylesheet" href="./common.css" />
-    <link rel="stylesheet" href="./recruit-hero/recruit-hero.css" />
+  <link rel="stylesheet" href="./recruit-hero/recruit-hero.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&display=swap"
     rel="stylesheet">
+    <link href="https://fonts.google.com/specimen/Barlow" rel="stylesheet">
 
   <title>recruit</title>
 
   <!-- jquery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
+ <!-- slick -->
+ <link rel="stylesheet" type="text/css" href="css/slick.css">
+ <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+ <script type="text/javascript" src="js/slick.min.js"></script> 
   <!-- font -->
   <script src="https://kit.fontawesome.com/bcbec239cd.js" crossorigin="anonymous"></script>
 
@@ -169,32 +174,42 @@
   <div class="recruit_personality">
     <h2>ププレひまわりが求める人財</h2>
     <hr>
-    <div class="recruit_personality_maincont">
-      <ul class="recruit_personality_maincont_img">
-        <li><img src="image/recruit/personality01.png" alt=""></li>
-      </ul>
-      <div class="recruit_personality_maincont_box">
-        <p>PERSONALITY.01</p>
-        <div class="recruit_personality_maincont_box_textcont">
-          <h3>自ら考える人</h3>
-          <h3>成長実感ができる環境の中で自ら選んで考え、学ぶ社員。</h3>
-          <hr>
-          <p>ププレひまわりには成長ができる環境が整っています。<br>
-            そしてあなたが成長を実感するには、日々の業務の中でどれだけ気付きを大切にしているかが鍵です。<br>
-            時代の変化に合わせ私たちも進化し挑戦し続ける。気付くことで工夫や改善をすることが出来る。その結果、お客様に喜びを提供できる。それがひいては地域や業界の貢献へと繋がっていきます。</p>
+    <ul class="recruit_personality_maincont">
+      <li>
+        <div class="recruit_personality_maincont_img">
+          <img src="image/recruit/personality01.png" alt="">
         </div>
-      </div>
-      <div class="recruit_personality_maincont_box_left">
-        <a href="">
-          <img src="image/common/left_arrow_hover.png" alt=""><img src="image/common/left_arrow.png" alt="">
-      </div>
-      </a>
-      <div class="recruit_personality_maincont_box_right">
-        <a href="">
-          <img src="image/common/right_arrow_hover.png" alt=""><img src="image/common/right_arrow.png" alt="">
-      </div>
-      </a>
-    </div>
+        <div class="recruit_personality_maincont_box">
+          <p>PERSONALITY.01</p>
+          <div class="recruit_personality_maincont_box_textcont">
+            <h3>自ら考える人</h3>
+            <h3>成長実感ができる環境の中で自ら選んで考え、学ぶ社員。</h3>
+            <hr>
+            <p>ププレひまわりには成長ができる環境が整っています。<br>
+              そしてあなたが成長を実感するには、日々の業務の中でどれだけ気付きを大切にしているかが鍵です。<br>
+              時代の変化に合わせ私たちも進化し挑戦し続ける。気付くことで工夫や改善をすることが出来る。その結果、お客様に喜びを提供できる。それがひいては地域や業界の貢献へと繋がっていきます。</p>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="recruit_personality_maincont_img">
+          <img src="image/recruit/personality01.png" alt="">
+        </div>
+        <div class="recruit_personality_maincont_box">
+          <p>PERSONALITY.01</p>
+          <div class="recruit_personality_maincont_box_textcont">
+            <h3>自ら考える人</h3>
+            <h3>成長実感ができる環境の中で自ら選んで考え、学ぶ社員。</h3>
+            <hr>
+            <p>ププレひまわりには成長ができる環境が整っています。<br>
+              そしてあなたが成長を実感するには、日々の業務の中でどれだけ気付きを大切にしているかが鍵です。<br>
+              時代の変化に合わせ私たちも進化し挑戦し続ける。気付くことで工夫や改善をすることが出来る。その結果、お客様に喜びを提供できる。それがひいては地域や業界の貢献へと繋がっていきます。</p>
+          </div>
+        </div>
+      </li>
+
+    </ul>
 
   </div>
 
@@ -327,10 +342,6 @@
     <h2>福利厚生・制度</h2>
     <hr>
     <ul class="recruit_welfare_main">
-      <a class="recruit_welfare_main_left_arrow" href="#"><img src="image/common/left_arrow_hover.png" alt=""><img
-          src="image/common/left_arrow.png" alt=""></a>
-      <a class="recruit_welfare_main_right_arrow" href="#"><img src="image/common/right_arrow_hover.png" alt=""><img
-          src="image/common/right_arrow.png" alt=""></a>
       <li class="recruit_welfare_main_block">
         <img src="image/recruit/welfare01.png" alt="">
         <p>入社時配属は、希望エリア内での配属を考慮します。勤務地を選択することで「エリア内だけの配属となる”エリア社員”と他エリア配属もありの
@@ -340,6 +351,11 @@
         <img src="image/recruit/welfare02.png" alt="">
         <p>育児休暇は入社１年以上勤務すれば全員取得できます。”育児時短制度”は、復帰後更にお子様が小学校へ入学するまで、勤務時間を１時間～２時間短縮できる制度です。<br>
           ※介護が必要になった場合も利用可。</p>
+      </li>
+      <li class="recruit_welfare_main_block">
+        <img src="image/recruit/welfare03.png" alt="">
+        <p>3年使える育児時短制度が終了してもまだ続く大変な子育て時期は、更に働き方が選べます。<br>
+          お子様が中学校へ入学するまで使えて、勤務時間を固定できる制度です。（例：開店～夕方まで）又、いつでも正社員に戻れます！</p>
       </li>
       <li class="recruit_welfare_main_block">
         <img src="image/recruit/welfare03.png" alt="">
@@ -568,21 +584,50 @@
         }
       });
     });
+
+    // 人材のslick
+    $('.recruit_personality_maincont').slick({
+      autoplay: true,
+      autoplaySpeed: 5000,
+      dots: true,
+      slidesToShow: 1,
+      prevArrow: '<img src="image/common/left_arrow.png" class="slick_recruit_left_arrow">',
+      nextArrow: '<img src="image/common/right_arrow.png" class="slick_recruit_right_arrow">'
+    });
+
+    // 福利厚生のslick
+    $('.recruit_welfare_main').slick({
+      autoplay: true,
+      autoplaySpeed: 5000,
+      dots: true,
+      slidesToShow: 3,
+      prevArrow: '<img src="image/common/left_arrow.png" class="slick_welfare_left_arrow">',
+      nextArrow: '<img src="image/common/right_arrow.png" class="slick_welfare_right_arrow">',
+      responsive: [{
+        breakpoint: 750,
+        settings: {
+          slidesToShow: 1,
+          centerMode: true,
+          centerPadding: '60px',
+        }
+      }]
+    });
+
   </script>
 
-<script src="./recruit-hero/recruit-hero.js"></script>
-<script>
-  recruitHero({
-    images: [
-      // 切り替え画像の設定
-      { src: './recruit-hero/image/photo1-lg.jpg', alt: 'altを入れてね' },
-      { src: './recruit-hero/image/photo2-lg.jpg', alt: 'altを入れてね' },
-      { src: './recruit-hero/image/photo-dummy.webp', alt: 'altを入れてね' },
-      { src: './recruit-hero/image/photo-dummy2.webp', alt: 'altを入れてね' },
-    ],
-    interval: 4000,
-  })
-</script>
+  <script src="./recruit-hero/recruit-hero.js"></script>
+  <script>
+    recruitHero({
+      images: [
+        // 切り替え画像の設定
+        { src: './recruit-hero/image/photo1-lg.jpg', alt: 'altを入れてね' },
+        { src: './recruit-hero/image/photo2-lg.jpg', alt: 'altを入れてね' },
+        { src: './recruit-hero/image/photo-dummy.webp', alt: 'altを入れてね' },
+        { src: './recruit-hero/image/photo-dummy2.webp', alt: 'altを入れてね' },
+      ],
+      interval: 4000,
+    })
+  </script>
 </body>
 
 </html>
