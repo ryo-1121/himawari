@@ -373,7 +373,7 @@
 .workplace_welfare_benefits {
   max-width: 690px;
   width: 92%;
-  margin: 0 auto 5%;
+  margin: 0 auto;
 }
 
 @media (min-width: 750px) {
@@ -455,7 +455,7 @@
 
 /* ------------  gallery  ------------ */
 .workplace_gallery {
-  padding-top: 80px;
+  padding-top: 100px;
   max-width: 1000px;
   width: 90%;
   margin: 0 auto 100px;
