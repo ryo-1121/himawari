@@ -1,84 +1,4 @@
-/* ------------  fv  ------------ */
 
-.top_fv_topimage {
-    background-image: url(../image/top/top_main01.png);
-    background-size: cover;
-    width: 100%;
-    display: none;
-    margin-bottom: 45px;
-    position: relative;
-}
-
-@media (min-width: 750px) {
-    .top_fv_topimage {
-        background-image: url(../image/top/top_main01.png);
-        background-size: cover;
-        width: 100%;
-        display: flex;
-        margin-bottom: 45px;
-    }
-}
-
-.top_fv_topimage h1 {
-    font-family: "Kinuta MaruMaruGothic CLr StdN";
-    color: rgb(59, 47, 40);
-    line-height: 1.138;
-    text-align: left;
-    margin: 2.3% 11.5% 0 2.7%;
-    font-size: clamp(37px, 5vw, 70px);
-}
-
-.top_fv_topimage span, .top_fv_topimage_sp span {
-    color: #d70b2a;
-}
-
-.top_fv_slide01 {
-    max-width: 298px;
-    width: 21.285%;
-    margin-right: 1.7%;
-}
-
-.top_fv_slide01 img, .top_fv_sp_slide01 img {
-    width: 100%;
-    background-color: rgb(200, 200, 200);
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-
-.top_fv_slide02 {
-    max-width: 298px;
-    width: 21.285%;
-}
-
-.top_fv_slide02 img {
-    width: 100%;
-    background-color: rgb(200, 200, 200);
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-
-.top_fv_topimage_sp {
-    background-image: url(../image/top/top_main_sp01.png);
-    background-size: cover;
-    width: 100%;
-    display: flex;
-    margin-bottom: 30px;
-}
-
-@media (min-width: 750px) {
-    .top_fv_topimage_sp {
-        display: none;
-    }
-}
-
-.top_fv_topimage_sp h1 {
-    font-size: 7.5vw;
-    font-family: "Kinuta MaruMaruGothic CLr StdN";
-    color: rgb(59, 47, 40);
-    line-height: 1.138;
-    text-align: left;
-    margin: 4% 0 0 2.7%;
-}
 
 .top_fv_sp_slide01 {
     max-width: 220px;
@@ -140,7 +60,7 @@
     }
 }
 
-.top_news h1 {
+.top_news h2 {
     text-align: center;
     font-size: 8.02vw;
     font-family: agenda;
@@ -150,12 +70,12 @@
 }
 
 @media (min-width: 750px) {
-    .top_news h1 {
+    .top_news h2 {
         font-size: 3.43vw;
     }
 }
 
-.top_news h2 {
+.top_news_notice {
     font-size: 3.75vw;
     font-family: "Yu Gothic";
     color: rgba(51, 51, 51, 0.8);
@@ -165,7 +85,7 @@
 }
 
 @media (min-width: 750px) {
-    .top_news h2 {
+    .top_news_notice {
         font-size: 1vw;
         margin-bottom: 45px;
     }
@@ -357,7 +277,7 @@
     }
 }
 
-.top_about h1 {
+.top_about h2 {
     text-align: center;
     font-size: 8.02vw;
     font-family: agenda;
@@ -367,12 +287,12 @@
 }
 
 @media (min-width: 750px) {
-    .top_about h1 {
+    .top_about h2 {
         font-size: 3.43vw;
     }
 }
 
-.top_about h2 {
+.top_about_notice {
     font-size: 3.75vw;
     font-family: "Yu Gothic";
     color: rgba(51, 51, 51, 0.8);
@@ -382,7 +302,7 @@
 }
 
 @media (min-width: 750px) {
-    .top_about h2 {
+    .top_about_notice {
         font-size: 1vw;
         margin-bottom: 60px;
     }
@@ -431,7 +351,7 @@
     order: 2;
 }
 
-.top_about_maincont_text h1 {
+.top_about_maincont_text h2 {
     font-size: 6.42vw;
     font-family: "Kinuta MaruMaruGothic CLr StdN";
     color: rgb(59, 47, 40);
@@ -441,7 +361,7 @@
 }
 
 @media (min-width: 750px) {
-    .top_about_maincont_text h1 {
+    .top_about_maincont_text h2 {
         font-size: min(2.57vw, 36px);
         margin: 20px 0 40px 0;
     }
@@ -579,20 +499,20 @@
     }
 }
 
-.top_interview h1 {
-    font-size: 60px;
+.top_interview_back {
+    font-size: 8.5vw;
     font-family: agenda;
     font-weight: inherit;
     letter-spacing: 10px;
     color: rgba(243, 239, 230, 0.6);
     position: absolute;
     z-index: -1;
-    left: 20%;
-    top: 380px;
+    left: 33%;
+    top: 33%;
 }
 
 @media (min-width: 750px) {
-    .top_interview h1 {
+    .top_interview_back {
         font-size: 11.5vw;
         top: -24%;
         left: 16%;
