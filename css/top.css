@@ -93,10 +93,6 @@
     justify-content: space-between;
 }
 
-.slick-active {
-    margin: 0 45px;
-}
-
 @media (min-width: 750px) {
     .top_fv_sns {
         display: flex;
@@ -121,116 +117,6 @@
 
 .top_fv_sns_image img {
     width: 100%;
-}
-
-/* search */
-.fv_search {
-    position: absolute;
-    left: 4%;
-    top: 20%;
-    background-color: rgb(215, 11, 42);
-    box-shadow: 0px 6px 21px 0px rgba(60, 60, 60, 0.46);
-    padding: 15px 10px;
-}
-
-@media (min-width: 750px) {
-    .fv_search {
-        left: auto;
-        right: 50px;
-        top: 12%;
-    }
-}
-
-@media (min-width: 1000px) {
-    .fv_search {
-        top: 18%;
-    }
-}
-
-@media (min-width: 1230px) {
-    .fv_search {
-        top: 25%;
-    }
-}
-
-
-.fv_search_title {
-    display: flex;
-    font-size: 18px;
-    font-family: "YuGothic";
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    line-height: 1.49;
-    text-align: center;
-    margin-bottom: 8px;
-}
-
-.fv_search_title p {
-    margin: 0 8px;
-}
-
-.fv_search_details {
-    border-radius: 2px;
-    background-color: rgb(255, 255, 255);
-    padding: 12px 9px 6px;
-}
-
-.fv_search_details select {
-    display: block;
-    border-width: 1px;
-    border-color: rgb(157, 157, 157);
-    border-style: solid;
-    border-radius: 5px;
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 8px;
-    color: rgb(168, 168, 168);
-    font-size: 14px;
-    font-family: "YuGothic";
-    font-weight: bold;
-}
-
-.fv_search_details .fv_search_employment {
-    margin-bottom: 13px;
-}
-
-.fv_search_detail_submit {
-    background-color: rgb(51, 51, 51);
-    padding: 15px 0;
-    width: 100%;
-    text-align: center;
-    font-size: 16px;
-    font-family: "YuGothic";
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    border: none;
-    cursor: pointer;
-}
-
-.fv_search_detail_submit:hover {
-    background-color: #707070;
-    opacity: 1;
-}
-
-.fa-search {
-    margin-right: 5px;
-}
-
-.fv_search_details_condition {
-    text-decoration: underline;
-    text-align: center;
-    margin-top: 10px;
-}
-
-.fv_search_details_condition a {
-    color: rgb(51, 51, 51);
-    font-weight: bold;
-    font-size: 13px;
-    font-family: "YuGothic";
-}
-
-.slick-dotted.slick-slider.top_fv_sns {
-    margin-bottom: 0;
 }
 
 /* ------------  news  ------------ */

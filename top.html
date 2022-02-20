@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/recruit.css">
   <link rel="stylesheet" href="css/top.css">
+  <link rel="stylesheet" href="./common.css" />
+  <link rel="stylesheet" href="./home-hero/home-hero.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&display=swap"
@@ -109,78 +111,142 @@
   </header>
 
   <!-- fv -->
-  <div class="top_fv">
-    <div class="top_fv_topimage">
-      <h1>あなたの<span>笑顔</span>が、<br>
-        地域を元気に。</h1>
-      <ul class="top_fv_slide01">
-        <li><img src="image/top/top_main_slide01.png" alt=""></li>
-        <li><img src="image/top/top_main_slide02.png" alt=""></li>
-        <li><img src="image/top/top_main_slide03.png" alt=""></li>
-        <li><img src="image/top/top_main_slide04.png" alt=""></li>
-      </ul>
-      <ul class="top_fv_slide02">
-        <li><img src="image/top/top_main_slide06.png" alt=""></li>
-        <li><img src="image/top/top_main_slide07.png" alt=""></li>
-        <li><img src="image/top/top_main_slide08.png" alt=""></li>
-        <li><img src="image/top/top_main_slide09.png" alt=""></li>
-      </ul>
-    </div>
-    <div class="top_fv_topimage_sp">
-      <h1>あなたの<span>笑顔</span>が、<br>
-        地域を元気に。</h1>
-      <ul class="top_fv_sp_slide01">
-        <li><img src="image/top/top_main_slide07.png" alt=""></li>
-        <li><img src="image/top/top_main_slide02.png" alt=""></li>
-        <li><img src="image/top/top_main_slide03.png" alt=""></li>
-        <li><img src="image/top/top_main_slide04.png" alt=""></li>
-        <li><img src="image/top/top_main_slide06.png" alt=""></li>
-        <li><img src="image/top/top_main_slide07.png" alt=""></li>
-      </ul>
-    </div>
-    <ul class="top_fv_sns">
-      <li class="top_fv_sns_image"><a href="#"><img src="image/top/top_line01.png" alt=""></a></li>
-      <li class="top_fv_sns_image"><a href="#"><img src="image/top/top_line01.png" alt=""></a></li>
-      <li class="top_fv_sns_image"><a href="#"><img src="image/top/top_line01.png" alt=""></a></li>
-    </ul>
-
-    <!--  search  -->
-    <div class="fv_search">
-      <div class="fv_search_title">
-        <img src="image/top/search_left.png" alt="">
-        <p>
-          ププレひまわりは<br>
-          中四国地方に131店舗展開中！
-        </p>
-        <img src="image/top/search_right.png" alt="">
-      </div>
-      <form action="" class="fv_search_details">
-        <select class="fv_search_workplace" name="workplace">
-          <option value="">勤務地</option>
-          <option value="a">a</option>
-          <option value="b">b</option>
-          <option value="c">c</option>
-        </select>
-        <select class="fv_search_occupation" name="occupation">
-          <option value="">職種</option>
-          <option value="a">a</option>
-          <option value="b">b</option>
-          <option value="c">c</option>
-        </select>
-        <select class="fv_search_employment" name="employment">
-          <option value="">職種</option>
-          <option value="a">a</option>
-          <option value="b">b</option>
-          <option value="c">c</option>
-        </select>
-        <input type="submit" value="&#xf002; クリック検索" class="fas fv_search_detail_submit">
-        <div class="fv_search_details_condition">
-          <a href="">詳しい条件から探す</a>
+  <div class="HomeHero js-HomeHero">
+    <!-- data-delay の指定（秒）があると最初にフェードインする -->
+    <div class="HomeHeroLayout">
+      <div class="HomeHeroLayout__header">
+        <div class="HomeHeroHeader">
+          <img class="HomeHeroHeader__text" src="./home-hero/image/header-text.svg" alt="あなたの笑顔が、地域を元気に。" />
+          <img class="HomeHeroHeader__earth" src="./home-hero/image/header-earth.png" alt="イラスト: 大地" data-delay="0" />
+          <img class="HomeHeroHeader__bud1" src="./home-hero/image/header-bud1.png" alt="イラスト: まだまだ小さい芽のひまわり"
+            data-delay="0.2" />
+          <img class="HomeHeroHeader__bud2" src="./home-hero/image/header-bud2.png" alt="イラスト: ちょっと成長した芽のひまわり"
+            data-delay="0.4" />
+          <img class="HomeHeroHeader__bud3" src="./home-hero/image/header-bud3.png" alt="イラスト: もうちょっと成長した芽のひまわり"
+            data-delay="0.6" />
+          <img class="HomeHeroHeader__flower" src="./home-hero/image/header-flower.png" alt="イラスト: 花が開いたひまわり"
+            data-delay="0.8" />
+          <img class="HomeHeroHeader__family" src="./home-hero/image/header-family.png" alt="イラスト: 家族"
+            data-delay="1.0" />
+          <img class="HomeHeroHeader__flower2" src="./home-hero/image/header-flower.png" alt="イラスト: 家族が持つひまわり"
+            data-delay="1.2" />
         </div>
-      </form>
+      </div>
+      <div class="HomeHeroLayout__map">
+        <div class="HomeHeroMap">
+          <img class="HomeHeroMap__bg" src="./home-hero/image/map.jpg" alt="地図" data-delay="0" />
+          <img class="HomeHeroMap__preload" src="./home-hero/image/map-flower.png" aria-hidden="true" />
+
+          <!-- 本店 -->
+          <i aria-hidden="true" data-pos="160,240" data-delay="1.4"></i>
+
+          <!-- 広島 -->
+          <i aria-hidden="true" data-pos="120,200" data-delay="1.5"></i>
+          <i aria-hidden="true" data-pos="210,210" data-delay="1.5"></i>
+          <i aria-hidden="true" data-pos="280,200" data-delay="1.5"></i>
+          <i aria-hidden="true" data-pos="85,240" data-delay="1.5"></i>
+          <i aria-hidden="true" data-pos="240,110" data-delay="1.5"></i>
+          <i aria-hidden="true" data-pos="140,300" data-delay="1.5"></i>
+
+          <!-- 島根 -->
+          <i aria-hidden="true" data-pos="30,210" data-delay="1.6"></i>
+          <i aria-hidden="true" data-pos="65,160" data-delay="1.6"></i>
+          <i aria-hidden="true" data-pos="100,120" data-delay="1.6"></i>
+          <i aria-hidden="true" data-pos="160,80" data-delay="1.6"></i>
+          <i aria-hidden="true" data-pos="200,70" data-delay="1.6"></i>
+          <i aria-hidden="true" data-pos="250,40" data-delay="1.6"></i>
+
+          <!-- 愛媛 -->
+          <i aria-hidden="true" data-pos="180,360" data-delay="1.7"></i>
+          <i aria-hidden="true" data-pos="230,350" data-delay="1.7"></i>
+          <i aria-hidden="true" data-pos="310,340" data-delay="1.7"></i>
+
+          <!-- 香川 -->
+          <i aria-hidden="true" data-pos="360,310" data-delay="1.8"></i>
+          <i aria-hidden="true" data-pos="390,290" data-delay="1.8"></i>
+
+          <!-- 岡山 -->
+          <i aria-hidden="true" data-pos="350,200" data-delay="1.9"></i>
+          <i aria-hidden="true" data-pos="400,220" data-delay="1.9"></i>
+          <i aria-hidden="true" data-pos="460,190" data-delay="1.9"></i>
+          <i aria-hidden="true" data-pos="410,150" data-delay="1.9"></i>
+          <i aria-hidden="true" data-pos="370,70" data-delay="1.9"></i>
+          <i aria-hidden="true" data-pos="440,80" data-delay="1.9"></i>
+
+          <!-- 鳥取 -->
+          <i aria-hidden="true" data-pos="310,50" data-delay="2.0"></i>
+          <i aria-hidden="true" data-pos="360,10" data-delay="2.0"></i>
+          <i aria-hidden="true" data-pos="490,0" data-delay="2.0"></i>
+
+          <!-- 兵庫 -->
+          <i aria-hidden="true" data-pos="550,10" data-delay="2.1"></i>
+          <i aria-hidden="true" data-pos="510,160" data-delay="2.1"></i>
+          <i aria-hidden="true" data-pos="570,130" data-delay="2.1"></i>
+          <i aria-hidden="true" data-pos="600,180" data-delay="2.1"></i>
+          <i aria-hidden="true" data-pos="650,170" data-delay="2.1"></i>
+        </div>
+      </div>
+      <div class="HomeHeroLayout__photos">
+        <div class="HomeHeroPhotos">
+          <!-- スマホ -->
+          <div class="HomeHeroPhotos__sm">
+            <picture><img src="./home-hero/image/photo-dummy01.jpg" alt="alt入れてね" /></picture>
+            <picture><img src="./home-hero/image/photo-dummy02.jpg" alt="alt入れてね" /></picture>
+            <picture><img src="./home-hero/image/photo-dummy03.jpg" alt="alt入れてね" /></picture>
+            <picture><img src="./home-hero/image/photo-dummy04.jpg" alt="alt入れてね" /></picture>
+            <picture><img src="./home-hero/image/photo-dummy05.jpg" alt="alt入れてね" /></picture>
+            <picture><img src="./home-hero/image/photo-dummy06.jpg" alt="alt入れてね" /></picture>
+            <picture><img src="./home-hero/image/photo-dummy07.jpg" alt="alt入れてね" /></picture>
+            <picture><img src="./home-hero/image/photo-dummy08.jpg" alt="alt入れてね" /></picture>
+            <picture><img src="./home-hero/image/photo-dummy09.jpg" alt="alt入れてね" /></picture>
+          </div>
+          <!-- PC右 -->
+          <div class="HomeHeroPhotos__lg1">
+            <picture><img src="./home-hero/image/photo-dummy01.jpg" alt="alt入れてね" /></picture>
+            <picture><img src="./home-hero/image/photo-dummy02.jpg" alt="alt入れてね" /></picture>
+            <picture><img src="./home-hero/image/photo-dummy03.jpg" alt="alt入れてね" /></picture>
+            <picture><img src="./home-hero/image/photo-dummy04.jpg" alt="alt入れてね" /></picture>
+            <picture><img src="./home-hero/image/photo-dummy05.jpg" alt="alt入れてね" /></picture>
+          </div>
+          <!-- PC左 -->
+          <div class="HomeHeroPhotos__lg2">
+            <picture><img src="./home-hero/image/photo-dummy06.jpg" alt="alt入れてね" /></picture>
+            <picture><img src="./home-hero/image/photo-dummy07.jpg" alt="alt入れてね" /></picture>
+            <picture><img src="./home-hero/image/photo-dummy08.jpg" alt="alt入れてね" /></picture>
+            <picture><img src="./home-hero/image/photo-dummy09.jpg" alt="alt入れてね" /></picture>
+          </div>
+        </div>
+      </div>
+      <div class="HomeHeroLayout__search">
+        <div class="HomeHeroSearch">
+          <p>
+            <span>ププレひまわりは<br />中四国地方に<b>131</b>店舗展開中！</span>
+          </p>
+          <form>
+            <select>
+              <option value="">勤務地</option>
+              <option value="広島（ダミー）">広島（ダミー）</option>
+            </select>
+            <select>
+              <option value="">職種</option>
+              <option value="薬剤師（ダミー）">薬剤師（ダミー）</option>
+            </select>
+            <select>
+              <option value="">雇用形態</option>
+              <option value="正社員（ダミー）">正社員（ダミー）</option>
+            </select>
+            <button>クリック検索</button>
+            <a href="#">詳しい検索条件から探す</a>
+          </form>
+        </div>
+      </div>
     </div>
   </div>
-
+  <ul class="top_fv_sns">
+    <li class="top_fv_sns_image"><a href="#"><img src="image/top/top_line01.png" alt=""></a></li>
+    <li class="top_fv_sns_image"><a href="#"><img src="image/top/top_line01.png" alt=""></a></li>
+    <li class="top_fv_sns_image"><a href="#"><img src="image/top/top_line01.png" alt=""></a></li>
+  </ul>
 
 
   <!-- news -->
@@ -434,6 +500,11 @@
       }
       ]
     });
+  </script>
+
+  <script src="./home-hero/home-hero.js"></script>
+  <script>
+    homeHero()
   </script>
 </body>
 

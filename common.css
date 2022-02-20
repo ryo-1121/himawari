@@ -1,0 +1,48 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+}
+
+html {
+  background: #fff;
+  color: #333;
+  line-height: 1.6;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 2000px;
+}
+
+:root {
+  --header-height: 90px;
+}
+@media screen and (max-width: 767px) {
+  :root {
+    --header-height: 48px;
+  }
+}
+
+.DummyHeader {
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.95);
+  color: #d70b2a;
+  font-size: 30px;
+}
+@media screen and (max-width: 767px) {
+  .DummyHeader {
+    font-size: 20px;
+  }
+}

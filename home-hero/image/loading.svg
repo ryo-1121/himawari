@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 110">
+  <g id="c">
+    <g id="b">
+      <path id="a" stroke="#F08300" stroke-width="16.66" stroke-linecap="round" d="M55,8.33V101.67" />
+      <use href="#a" transform="rotate(20 55 55)"/>
+    </g>
+    <use href="#b" transform="rotate(40 55 55)"/>
+  </g>
+  <use href="#c" transform="rotate(80 55 55)"/>
+  <use href="#a" transform="rotate(-20 55 55)"/>
+  <circle fill="#231815" stroke="#fff" stroke-width="3" cx="55" cy="55" r="37.5"/>
+  <clipPath id="z"><circle cx="55" cy="55" r="37"/></clipPath>
+  <path stroke="#fff" stroke-width="3.4" clip-path="url(#z)" d="M61 9.4 9.4 61m58.2-45L16 67.6m58.2-45L22.6 74.2m58.2-45L29.2 80.8m58.2-45L35.8 87.4m58.2-45L42.4 94m58.2-45L49 100.6zm0 12L49 9.4m45 58.2L42.4 16m45 58.2L35.8 22.6m45 58.2L29.2 29.2m45 58.2L22.6 35.8M16 42.4 67.6 94m-6.6 6.6L9.4 49"/>
+</svg>
