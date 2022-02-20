@@ -399,7 +399,7 @@
     margin: 0 auto 85px;
 }
 
-.recruit_personality h1 {
+.recruit_personality h2 {
     width: 91%;
     font-size: 6.4vw;
     font-family: "Yu Gothic";
@@ -411,7 +411,7 @@
 }
 
 @media (min-width:750px) {
-    .recruit_personality h1 {
+    .recruit_personality h2 {
         font-size: 30px;
         font-family: "Yu Gothic";
         color: rgb(51, 51, 51);
@@ -728,7 +728,7 @@ opacity: 1;
     }
 }
 
-.recuit_pharmacist h1 {
+.recuit_pharmacist h2 {
     font-size: 6.4vw;
     font-family: "Yu Gothic";
     color: rgb(51, 51, 51);
@@ -739,7 +739,7 @@ opacity: 1;
 }
 
 @media (min-width:750px) {
-    .recuit_pharmacist h1 {
+    .recuit_pharmacist h2 {
         font-size: 30px;
     }
 }
@@ -818,7 +818,7 @@ opacity: 1;
     }
 }
 
-.recuit_pharmacist_main_text h2 {
+.recuit_pharmacist_main_text_notice {
     font-size: 4vw;
     font-family: "Yu Gothic";
     color: rgb(215, 11, 42);
@@ -828,7 +828,7 @@ opacity: 1;
 }
 
 @media (min-width:750px) {
-    .recuit_pharmacist_main_text h2 {
+    .recuit_pharmacist_main_text_notice {
         font-size: clamp(14px, 1.4vw, 21px);
         line-height: 1.8;
         margin-bottom: 7%;
@@ -836,7 +836,7 @@ opacity: 1;
     }
 }
 
-.recuit_pharmacist_main_text p {
+.recuit_pharmacist_main_text_textbox {
     font-size: 3.75vw;
     font-family: "Yu Gothic";
     color: rgb(51, 51, 51);
@@ -846,7 +846,7 @@ opacity: 1;
 }
 
 @media (min-width:750px) {
-    .recuit_pharmacist_main_text p {
+    .recuit_pharmacist_main_text_textbox {
         font-size: 14px;
         text-align: left;
         letter-spacing: 1.2px;
@@ -1191,7 +1191,7 @@ opacity: 1;
     }
 }
 
-.recruit_welfare h1 {
+.recruit_welfare h2 {
     font-size: 6.4vw;
     font-family: "Yu Gothic";
     color: rgb(51, 51, 51);
@@ -1202,7 +1202,7 @@ opacity: 1;
 }
 
 @media (min-width:750px) {
-    .recruit_welfare h1 {
+    .recruit_welfare h2 {
         font-size: 30px;
     }
 }
@@ -1341,7 +1341,7 @@ position: absolute;
     margin-bottom: 70px;
 }
 
-.recruit_education h1 {
+.recruit_education h2 {
     font-size: 6.4vw;
     font-family: "Yu Gothic";
     color: rgb(51, 51, 51);
@@ -1352,7 +1352,7 @@ position: absolute;
 }
 
 @media (min-width:750px) {
-    .recruit_education h1 {
+    .recruit_education h2 {
         font-size: 30px;
     }
 }
