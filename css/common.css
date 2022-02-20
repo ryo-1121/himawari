@@ -20,7 +20,7 @@ a:hover {
 }
 
 .a_under:hover {
-    text-decoration:underline;
+    text-decoration: underline;
 }
 
 /* ------------  header  ------------ */
@@ -113,7 +113,7 @@ header {
 }
 
 .header_right_item {
-    position: fixed;
+    position: absolute;
     z-index: 1000;
     width: 60%;
     background-color: rgba(241, 241, 241, 0.9);
@@ -360,7 +360,7 @@ footer {
 
 .footer_up_arrow {
     position: absolute;
-    right: 10%;
+    right: 3%;
     bottom: 80px;
     width: 50px;
     z-index: 100;
@@ -370,7 +370,7 @@ footer {
     .footer_up_arrow {
         position: absolute;
         right: 10%;
-        bottom: 400px;
+        bottom: 375px;
         width: auto;
     }
 }
@@ -399,12 +399,13 @@ footer {
 }
 
 .footer_logo_pupure {
-    max-width: 340px;
+    max-width: 240px;
     width: 60%;
 }
 
 @media (min-width: 1220px) {
     .footer_logo_pupure {
+        width: auto;
     }
 }
 
@@ -414,12 +415,18 @@ footer {
 }
 
 .footer_sns {
-    margin: 50px 0;
+    margin: 30px 0;
+}
+
+.footer_sns_mes_img {
+    max-width: 220px;
+    width: 50%;
 }
 
 @media (min-width: 1220px) {
-    .footer_sns {
-        margin: 30px 0;
+    .footer_sns_mes_img {
+        max-width: 116px;
+        width: auto;
     }
 }
 
@@ -431,12 +438,12 @@ footer {
 }
 
 .footer_sns_item {
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .footer_sns_item img {
-    margin-right: 40px;
-    max-width: 40px;
+    margin-right: 20px;
+    max-width: 30px;
 }
 
 .footer_sns_item .footer_sns_item_last {
@@ -467,8 +474,13 @@ footer {
     }
 }
 
+.footer_sns_wekcia_img {
+    width: 50%;
+    max-width: 250px;
+}
+
 .footer_menu1 {
-    margin: 50px 0 50px;
+    margin: 30px 0;
 }
 
 .footer_menu1 ul {
